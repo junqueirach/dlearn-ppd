@@ -1,0 +1,21 @@
+# Default: every text file is stored and checked out with LF (overrides core.autocrlf);
+# the Pascal sources below are the deliberate CRLF exception.
+* text=auto eol=lf
+
+# Keep the 2001 Turbo Pascal sources with CRLF endings (as written) and let
+# Git store them as UTF-8 while checking them out as CP850 — the code page
+# Turbo Pascal 7 expects for the box-drawing and accented characters.
+ppd/legacy-pascal/*.PAS   text eol=crlf working-tree-encoding=CP850
+# Fortran sources and data: LF, plain text
+*.FOR text eol=lf
+*.for text eol=lf
+*.DAT text eol=lf
+*.dat text eol=lf
+*.out text eol=lf
+*.md  text eol=lf
+*.yaml text eol=lf
+*.py  text eol=lf
+Makefile text eol=lf
+run.sh text eol=lf
+# diffs of DLEARN outputs are noise
+*.out -diff

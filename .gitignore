@@ -1,0 +1,27 @@
+# Fortran builds
+dlearn/*/build/
+dlearn/*/dlearn
+dlearn/*/dlearn.exe
+*.o
+*.mod
+# DLEARN scratch files
+input.dat
+output.dat
+rsinput.dat
+rsoutput.dat
+*.out
+!examples/trelica/reference/*.out
+!dlearn/zace-1997/examples/reference/*.out
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.venv/
+# editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

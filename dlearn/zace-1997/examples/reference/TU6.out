@@ -1,0 +1,273 @@
+14-node quadrilateral element rank check (2x2 standard quadrature)               
+
+
+ e x e c u t i o n   c o n t r o l   i n f o r m a t i o n 
+
+      execution code  . . . . . . . . . . . . . . (iexec ) =     1
+
+         eq. 0, data check                                   
+         eq. 1, execution                                    
+
+      analysis code . . . . . . . . . . . . . . . (iacode) =     1
+
+         eq. 0, dynamic analysis                             
+         eq. 1, static analysis                              
+
+      read restart file code  . . . . . . . . . . (ireadr) =     0
+
+         eq. 0, do not read restart file                     
+         eq. 1, read restart file                            
+
+      write restart file code . . . . . . . . . . (iwritr) =     0
+
+         eq. 0, do not write restart file                    
+         eq. 1, write restart file                           
+
+      input data print code . . . . . . . . . . . (iprtin) =     0
+
+         eq. 0, print nodal and element input data           
+         eq. 1, do not print nodal and element input data    
+
+      rank check code . . . . . . . . . . . . . . (irank ) =     2
+
+         eq. 0, do not perform rank check                    
+         eq. 1, print numbers of zero and negative pivots    
+         eq. 2, print all pivots                             
+
+      number of time sequences  . . . . . . . . . (numseq) =     1
+
+      number of nodal output time-histories . . . (ndout ) =     0
+
+      number of space dimensions  . . . . . . . . (nsd   ) =     2
+
+      number of nodal points  . . . . . . . . . . (numnp ) =     4
+
+      number of nodal degrees-of-freedom  . . . . (ndof  ) =     2
+
+      number of load vectors  . . . . . . . . . . (nlvect) =     0
+
+      number of load-time functions . . . . . . . (nltftn) =     0
+
+      number of points on load-time functions . . (nptslf) =     1
+
+      number of element groups  . . . . . . . . . (numeg ) =     1
+
+
+1 t i m e   s e q u e n c e   d a t a      
+
+      number of time sequences . . . . . . (numseq  ) =     1
+
+
+
+      time sequence number . . . . . . . . (n       ) =     1
+
+      number of time steps . . . . . . . . (nstep(n)) =     1
+
+      kinematic print increment  . . . . . (ndprt(n)) =     1
+
+      stress/strain print increment  . . . (nsprt(n)) =     1
+
+      time history plot increment  . . . . (nhplt(n)) =     0
+
+      number of iterations . . . . . . . . (niter(n)) =     1
+
+      first integration parameter  . . . . (alpha(n)) =  0.00000E+00
+
+      second integration parameter . . . . (beta(n) ) =  1.00000E+00
+
+      third integration parameter  . . . . (gamma(n)) =  0.00000E+00
+
+      time step  . . . . . . . . . . . . . (dt(n)   ) =  1.00000E+00
+
+
+
+
+1 n o d a l   c o o r d i n a t e   d a t a 
+
+
+      node no.              x1               x2 
+          1           0.00000000E+00   0.00000000E+00
+          2           1.00000000E+00   0.00000000E+00
+          3           1.00000000E+00   1.00000000E+00
+          4           0.00000000E+00   1.00000000E+00
+1 e l e m e n t   g r o u p   d a t a         
+
+      element group number  . . . . . . . . . . . (neg   ) =     1
+
+
+
+  f o u r - n o d e   q u a d r i l a t e r a l   e l e m e n t s
+
+      element type number . . . . . . . . . . . . (ntype ) =     1
+
+      number of elements  . . . . . . . . . . . . (numel ) =     1
+
+      number of element material sets . . . . . . (numat ) =     1
+
+      number of surface force cards . . . . . . . (nsurf ) =     0
+
+      number of stress/strain time histories  . . (nsout ) =     0
+
+      analysis option . . . . . . . . . . . . . . (iopt  ) =     1
+
+         eq.0, plane stress                                  
+         eq.1, plane strain                                  
+         eq.2, axisymmetric                                  
+
+      stress output print code  . . . . . . . . . (istprt) =     0
+
+         eq.0, stress output printed                         
+         eq.1, stress output not printed                     
+
+      surface force load-time function number . . (lfsurf) =     0
+
+      body force load-time function number  . . . (lfbody) =     0
+
+      numerical integration code  . . . . . . . . (nicode) =     0
+
+         eq.0, 2 x 2 gaussian quadrature                     
+         eq.1, 1-point gaussian quadrature                   
+
+      strain-displacement option  . . . . . . . . (ibbar ) =     0
+
+         eq.0, standard formulation                          
+         eq.1, b-bar formulation                             
+
+1 m a t e r i a l   s e t   d a t a                      
+
+      number of material sets . . . . . . . . . . (numat ) =     1
+
+
+       set     young's    poisson's     mass        mass      stiffness   thickness
+      number   modulus      ratio      density     damping     damping
+
+        1     1.0000E+00  3.0000E-01  0.0000E+00  0.0000E+00  0.0000E+00  1.0000E+00
+
+
+
+
+  g r a v i t y   v e c t o r   c o m p o n e n t s      
+
+      x-1 direction . . . . . . . . . . . . . . =  0.00000000E+00
+
+      x-2 direction . . . . . . . . . . . . . . =  0.00000000E+00
+
+
+1 e l e m e n t   d a t a
+
+      element   material  node 1    node 2    node 3    node 4
+          1         1         1         2         3         4
+14-node quadrilateral element rank check (2x2 standard quadrature)               
+
+
+ e q u a t i o n    s y s t e m    d a t a              
+
+      number of equations . . . . . . . . . . . . (neq   ) =        8
+
+      number of terms in left-hand-side matrix  . (nalhs ) =       36
+
+      mean half bandwidth . . . . . . . . . . . . (meanbw) =        4
+
+      total length of blank common required . . . (nwords) =     1303
+1 array d of factorization a = u(transpose) * d * u 
+
+      time sequence number   . . . . . . . . . . . . (nsq) =     1
+
+
+     1          5.76923077E-01
+     2          4.76762821E-01
+     3          2.94117647E-01
+     4          3.86728656E-01
+     5          3.78310214E-01
+     6          6.66133815E-16
+     7          4.64255370E-16
+     8          2.95966971E-16
+1 d y n a m i c   s t o r a g e    a l l o c a t i o n   i n f o r m a t i o n 
+
+            array no.     array        address      dim1      dim2      dim3      prec.
+
+                  1       nstep             0         0         0         0         1
+                  2       ndprt             0         0         0         0         1
+                  3       nsprt             0         0         0         0         1
+                  4       nhplt             0         0         0         0         1
+                  5       niter             0         0         0         0         1
+                  6       alpha             0         0         0         0         2
+                  7       beta              0         0         0         0         2
+                  8       gamma             0         0         0         0         2
+                  9       dt                0         0         0         0         2
+                 10       d                 0         0         0         0         2
+                 11       x                 0         0         0         0         2
+                 12       id                0         0         0         0         1
+                 13       idiag             0         0         0         0         1
+                 14       ngrp              0         0         0         0         1
+
+              *****       begin element group number    1
+ 
+                 15       npar              0         0         0         0         1
+                 16       mp                0         0         0         0         1
+                 17       w                 0         0         0         0         2
+                 18       det               0         0         0         0         2
+                 19       r                 0         0         0         0         2
+                 20       shl               0         0         0         0         2
+                 21       shg               0         0         0         0         2
+                 22       shgbar            0         0         0         0         2
+                 23       rho               0         0         0         0         2
+                 24       rdampm            0         0         0         0         2
+                 25       rdampk            0         0         0         0         2
+                 26       th                0         0         0         0         2
+                 27       c                 0         0         0         0         2
+                 28       grav              0         0         0         0         2
+                 29       ien               0         0         0         0         1
+                 30       mat               0         0         0         0         1
+                 31       lm                0         0         0         0         1
+                 32       ielno             0         0         0         0         1
+                 33       iside             0         0         0         0         1
+                 34       press             0         0         0         0         2
+                 35       shear             0         0         0         0         2
+                 36       eleffm            0         0         0         0         2
+                 37       xl                0         0         0         0         2
+                 38       work              0         0         0         0         2
+                 39       b                 0         0         0         0         2
+                 40       dmat              0         0         0         0         2
+                 41       db                0         0         0         0         2
+                 42       vl                0         0         0         0         2
+                 43       al                0         0         0         0         2
+                 44       elresf            0         0         0         0         2
+                 45       dl                0         0         0         0         2
+                 46       strain            0         0         0         0         2
+                 47       stress            0         0         0         0         2
+                 48       pstrn             0         0         0         0         2
+                 49       pstrs             0         0         0         0         2
+
+              *****       end element group data
+ 
+                 50       alhs              0         0         0         0         2
+1 d y n a m i c   s t o r a g e    a l l o c a t i o n   i n f o r m a t i o n 
+
+            array no.     array        address      dim1      dim2      dim3      prec.
+
+                 51       brhs              0         0         0         0         2
+14-node quadrilateral element rank check (2x2 standard quadrature)               
+
+
+      e x e c u t i o n   t i m i n g   i n f o r m a t i o n
+
+
+      i n i t i a l i z a t i o n   p h a s e        =  0.000E+00
+
+
+      s o l u t i o n   p h a s e                    =  0.000E+00
+
+
+          formation of left-hand-side matrices       =  0.000E+00
+
+          factorizations                             =  0.000E+00
+
+          formation of right-hand-side vectors       =  0.000E+00
+
+          forward reductions/back substitutions      =  0.000E+00
+
+          calculation of element output              =  0.000E+00
+                                                        _________
+
+          subtotal                                   =  0.000E+00

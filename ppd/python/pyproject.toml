@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dlearn-ppd"
+version = "2.0.0"
+description = "Pre-Processor for DLEARN: build, read, validate and write DLEARN fixed-column input files"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [{name = "Luiz Eduardo Lollato Junqueira"}]
+requires-python = ">=3.9"
+dependencies = ["PyYAML>=6"]
+keywords = ["finite-element", "DLEARN", "structural-dynamics", "preprocessor", "fortran"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Topic :: Scientific/Engineering",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[project.scripts]
+ppd = "ppd.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["ppd*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,84 @@
+DLEARN - distribution terms
+===========================
+
+DLEARN is Copyright 1987 by T.J.R. Hughes.  It is not released under an
+open-source licence; it is redistributed under the notice its authors placed
+at the head of the main program (DL.FOR), reproduced verbatim below.  In
+short: the authors permit distribution provided the program is not sold for
+profit and no royalties or development charges are made for its use; legal
+ownership stays with the developers; no warranty.
+
+Every copy of the sources in this repository (dlearn/zace-1997/src and
+dlearn/hermitian-2001/src) keeps this header.  If you redistribute DLEARN,
+keep it too.  This repository is not sold and charges nothing.
+
+The reference for the program and its input is:
+  T.J.R. Hughes, "The Finite Element Method: Linear Static and Dynamic Finite
+  Element Analysis", Prentice-Hall, Englewood Cliffs, N.J., 1987
+  (Dover reprint, 2000, ISBN 978-0-486-41181-1), chapter 11.
+
+------------------------------------------------------------------------
+c
+c     ************************************************************
+c     *                                                          *
+c     *               * * *   D L E A R N   * * *                *
+c     *                                                          *
+c     *                                                          *
+c     *               A LINEAR STATIC AND DYNAMIC                *
+c     *                                                          *
+c     *             FINITE ELEMENT ANALYSIS PROGRAM              *
+c     *                                                          *
+c     *                                                          *
+c     *               T. J. R.   H U G H E S                     *
+c     *                                                          *
+c     *                  R. M.   F E R E N C Z                   *
+c     *                                                          *
+c     *                  A. M.   R A E F S K Y                   *
+c     *                                                          *
+c     *                                                          *
+c     *                 1 5   M a y   1 9 8 6                    *
+c     *                                                          *
+c     ************************************************************
+c     *                                                          *
+c     *   Reference:  Thomas J. R. Hughes, "The Finite Element   *
+c     *   Method -- Linear Static and Dynamic Finite Element     *
+c     *   Analysis," Prentice-Hall, Englewood Cliffs, N.J. 1987  *
+c     *                                                          *
+c     ************************************************************
+c     *                                                          *
+c     *         NOTICE TO USERS OF THIS PROGRAM PACKAGE          *
+c     *                                                          *
+c     *   No responsibility or legal liability is assumed by     *
+c     *   the authors for the accuracy, completeness, or use-    *
+c     *   fulness of any information or process contained in     *
+c     *   this computer program package, or for any errors,      *
+c     *   mistakes, or misrepresentations that may occur from    *
+c     *   the use of this computer program package.  All soft-   *
+c     *   ware provided are in "as is, with all defects" con-    *
+c     *   dition.  No warranties of any kind, whether statu-     *
+c     *   tory, written, oral, expressed, or implied (includ-    *
+c     *   ing warranties of fitness and merchantability) shall   *
+c     *   apply.                                                 *
+c     *                                                          *
+c     *   Distribution of this program is made possible by the   *
+c     *   authors with the stipulation that the program neither  *
+c     *   be sold in whole or in part for direct profit nor      *
+c     *   royalties or development charges made for its use.     *
+c     *   By acceptance of delivery of this program package,     *
+c     *   the purchaser understands the restrictions on the use  *
+c     *   and distribution of the program.  The fee paid repre-  *
+c     *   sent a charge for materials, duplication, packaging,   *
+c     *   mailing, communications, and assorted labor costs.     *
+c     *   The legal ownership of the program remains with the    *
+c     *   developers.                                            *
+c     *                                                          *
+c     *   Copyright: 1987 by T.J.R. Hughes, all rights reserved. *
+c     *                                                          *
+c     ************************************************************
+------------------------------------------------------------------------
+
+Provenance of the copy in dlearn/zace-1997: the "10.06.97" update distributed
+on the Internet by ZACE Services Ltd (Lausanne, Switzerland), compiled with
+Microsoft Fortran PowerStation 4.0, which adds the 8-node brick element
+(BR1.FOR, BR2.FOR) and the Lanczos eigensolver LANSO.FOR (B. Nour-Omid, 1986).
+The same distribution is the ancestor of the other DLEARN copies on GitHub.

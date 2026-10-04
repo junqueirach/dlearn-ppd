@@ -1,0 +1,60 @@
+# Six-node, eight-bar plane truss under a suddenly applied load - the worked
+# example of chapter 4 of the 2001 thesis (Junqueira, UNESP Bauru).
+#
+#   ppd build trelica.yaml -o trelica-hermitian.dat                 (Hermitian build, order 2)
+#   ppd build trelica.yaml -o trelica-zace.dat --layout zace        (original DLEARN, HHT alpha)
+#
+# Units are consistent but unnamed (E = 2.1e5, rho = 7.3e-6, lengths 600/1600).
+title: UM EXEMPLO DINAMICO DE TRELICA COM VARIOS NOS
+echo: true
+analysis: hermitian        # dynamic | static | hermitian
+hermitian_order: 2         # 1-4, used only with analysis: hermitian
+execute: true
+print_input: true
+rank_check: 0
+nsd: 3
+ndof: 3
+numnp: 6
+
+time_sequences:
+  - {nstep: 100, ndprt: 1, nsprt: 1, nhplt: 1, niter: 1, alpha: -0.10, beta: 0.3025, gamma: 0.60, dt: 0.023}
+
+nodal_histories:
+  - {node: 3, dof: 2, kind: displacement}
+
+coordinates:                      # linear generation along x: nodes 1-2-3 and 4-5-6
+  - {node: 1, values: [0.0, 600.0, 0.0], generate: {numgp: 2, points: [[1600.0, 600.0, 0.0]], ninc: [[2, 1]]}}
+  - {node: 4, values: [0.0,   0.0, 0.0], generate: {numgp: 2, points: [[1600.0,   0.0, 0.0]], ninc: [[2, 1]]}}
+
+boundary_conditions:              # 0 free, 1 prescribed displacement
+  - {node: 1, last: 6, inc: 1, codes: [0, 0, 1]}   # plane truss: lock z on every node
+  - {node: 1, codes: [1, 1, 1]}                     # supports
+  - {node: 4, codes: [1, 1, 1]}
+
+loads:
+  - - {node: 3, values: [0.0, -1000.0, 0.0]}
+
+time_functions:
+  - [[0.0, 1.0]]                  # constant load factor from t = 0
+
+initial_conditions:
+  displacements: []
+  velocities: []
+  accelerations: []
+
+element_groups:
+  - type: truss
+    nen: 2
+    istprt: 0                     # print stresses
+    lfbody: 0
+    nint: 1
+    imass: 1                      # lumped mass
+    impexp: 0
+    materials:
+      - {id: 1, e: 210000.0, rho: 7.3e-6, rdampm: 0.0, rdampk: 0.0, area: 10.0}
+    gravity: [0.0, 0.0, 0.0]
+    elements:                     # generation: 2 more elements, element +1, nodes +1
+      - {n: 1, mat: 1, nodes: [1, 2], generate: [[2, 1, 1]]}   # 1-2, 2-3  (top chord: 1,2)
+      - {n: 3, mat: 1, nodes: [4, 5], generate: [[2, 1, 1]]}   # 4-5, 5-6  (bottom chord: 3,4)
+      - {n: 5, mat: 1, nodes: [2, 4], generate: [[2, 2, 1]]}   # 2-4, 3-5  (diagonals: 5,7)
+      - {n: 6, mat: 1, nodes: [2, 5], generate: [[2, 2, 1]]}   # 2-5, 3-6  (verticals: 6,8)

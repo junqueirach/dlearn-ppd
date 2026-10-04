@@ -1,0 +1,24 @@
+name: build-and-test
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  fortran-and-python:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install gfortran
+        run: sudo apt-get update && sudo apt-get install -y gfortran
+      - name: Build and check DLEARN (ZACE 1997)
+        run: make -C dlearn/zace-1997 && make -C dlearn/zace-1997 check
+      - name: Build and check DLEARN (Hermitian 2001)
+        run: make -C dlearn/hermitian-2001 && make -C dlearn/hermitian-2001 check
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install PPD
+        run: pip install -e "ppd/python[test]"
+      - name: Test PPD (incl. end-to-end runs through both executables)
+        run: cd ppd/python && python -m pytest -q

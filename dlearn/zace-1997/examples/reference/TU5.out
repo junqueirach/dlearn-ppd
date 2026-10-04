@@ -1,0 +1,383 @@
+14-node quadrilateral element patch test #1: constant x1 displacement            
+
+
+ e x e c u t i o n   c o n t r o l   i n f o r m a t i o n 
+
+      execution code  . . . . . . . . . . . . . . (iexec ) =     1
+
+         eq. 0, data check                                   
+         eq. 1, execution                                    
+
+      analysis code . . . . . . . . . . . . . . . (iacode) =     1
+
+         eq. 0, dynamic analysis                             
+         eq. 1, static analysis                              
+
+      read restart file code  . . . . . . . . . . (ireadr) =     0
+
+         eq. 0, do not read restart file                     
+         eq. 1, read restart file                            
+
+      write restart file code . . . . . . . . . . (iwritr) =     0
+
+         eq. 0, do not write restart file                    
+         eq. 1, write restart file                           
+
+      input data print code . . . . . . . . . . . (iprtin) =     0
+
+         eq. 0, print nodal and element input data           
+         eq. 1, do not print nodal and element input data    
+
+      rank check code . . . . . . . . . . . . . . (irank ) =     0
+
+         eq. 0, do not perform rank check                    
+         eq. 1, print numbers of zero and negative pivots    
+         eq. 2, print all pivots                             
+
+      number of time sequences  . . . . . . . . . (numseq) =     1
+
+      number of nodal output time-histories . . . (ndout ) =     0
+
+      number of space dimensions  . . . . . . . . (nsd   ) =     2
+
+      number of nodal points  . . . . . . . . . . (numnp ) =     9
+
+      number of nodal degrees-of-freedom  . . . . (ndof  ) =     2
+
+      number of load vectors  . . . . . . . . . . (nlvect) =     1
+
+      number of load-time functions . . . . . . . (nltftn) =     1
+
+      number of points on load-time functions . . (nptslf) =     1
+
+      number of element groups  . . . . . . . . . (numeg ) =     1
+
+
+1 t i m e   s e q u e n c e   d a t a      
+
+      number of time sequences . . . . . . (numseq  ) =     1
+
+
+
+      time sequence number . . . . . . . . (n       ) =     1
+
+      number of time steps . . . . . . . . (nstep(n)) =     1
+
+      kinematic print increment  . . . . . (ndprt(n)) =     1
+
+      stress/strain print increment  . . . (nsprt(n)) =     1
+
+      time history plot increment  . . . . (nhplt(n)) =     0
+
+      number of iterations . . . . . . . . (niter(n)) =     1
+
+      first integration parameter  . . . . (alpha(n)) =  0.00000E+00
+
+      second integration parameter . . . . (beta(n) ) =  1.00000E+00
+
+      third integration parameter  . . . . (gamma(n)) =  0.00000E+00
+
+      time step  . . . . . . . . . . . . . (dt(n)   ) =  1.00000E+00
+
+
+
+
+1 n o d a l   c o o r d i n a t e   d a t a 
+
+
+      node no.              x1               x2 
+          1           0.00000000E+00   0.00000000E+00
+          2           1.00000000E+00   0.00000000E+00
+          3           2.00000000E+00   0.00000000E+00
+          4           0.00000000E+00   1.00000000E+00
+          5           1.10000000E+00   8.00000000E-01
+          6           2.00000000E+00   1.00000000E+00
+          7           0.00000000E+00   2.00000000E+00
+          8           1.00000000E+00   2.00000000E+00
+          9           2.00000000E+00   2.00000000E+00
+1 n o d a l   b o u n d a r y   c o n d i t i o n   c o d e s
+
+
+      node no.         dof1      dof2
+          1              1         1
+          2              1         1
+          3              1         1
+          4              1         1
+          6              1         1
+          7              1         1
+          8              1         1
+          9              1         1
+1 p r e s c r i b e d   f o r c e s   a n d   k i n e m a t i c   b o u n d a r y   c o n d i t i o n s
+
+      load vector number =     1
+
+
+      node no.             dof1             dof2
+          1           1.00000000E+00   0.00000000E+00
+          2           1.00000000E+00   0.00000000E+00
+          3           1.00000000E+00   0.00000000E+00
+          4           1.00000000E+00   0.00000000E+00
+          6           1.00000000E+00   0.00000000E+00
+          7           1.00000000E+00   0.00000000E+00
+          8           1.00000000E+00   0.00000000E+00
+          9           1.00000000E+00   0.00000000E+00
+1 l o a d - t i m e   f u n c t i o n   d a t a 
+
+      number of load-time funtions . . . . . (nltftn  ) =     1
+
+
+
+      function number     1
+
+                time             load factor
+
+           1.00000000E+00      1.00000000E+00
+1 e l e m e n t   g r o u p   d a t a         
+
+      element group number  . . . . . . . . . . . (neg   ) =     1
+
+
+
+  f o u r - n o d e   q u a d r i l a t e r a l   e l e m e n t s
+
+      element type number . . . . . . . . . . . . (ntype ) =     1
+
+      number of elements  . . . . . . . . . . . . (numel ) =     4
+
+      number of element material sets . . . . . . (numat ) =     1
+
+      number of surface force cards . . . . . . . (nsurf ) =     0
+
+      number of stress/strain time histories  . . (nsout ) =     0
+
+      analysis option . . . . . . . . . . . . . . (iopt  ) =     1
+
+         eq.0, plane stress                                  
+         eq.1, plane strain                                  
+         eq.2, axisymmetric                                  
+
+      stress output print code  . . . . . . . . . (istprt) =     0
+
+         eq.0, stress output printed                         
+         eq.1, stress output not printed                     
+
+      surface force load-time function number . . (lfsurf) =     0
+
+      body force load-time function number  . . . (lfbody) =     0
+
+      numerical integration code  . . . . . . . . (nicode) =     0
+
+         eq.0, 2 x 2 gaussian quadrature                     
+         eq.1, 1-point gaussian quadrature                   
+
+      strain-displacement option  . . . . . . . . (ibbar ) =     0
+
+         eq.0, standard formulation                          
+         eq.1, b-bar formulation                             
+
+1 m a t e r i a l   s e t   d a t a                      
+
+      number of material sets . . . . . . . . . . (numat ) =     1
+
+
+       set     young's    poisson's     mass        mass      stiffness   thickness
+      number   modulus      ratio      density     damping     damping
+
+        1     1.0000E+00  3.0000E-01  0.0000E+00  0.0000E+00  0.0000E+00  1.0000E+00
+
+
+
+
+  g r a v i t y   v e c t o r   c o m p o n e n t s      
+
+      x-1 direction . . . . . . . . . . . . . . =  0.00000000E+00
+
+      x-2 direction . . . . . . . . . . . . . . =  0.00000000E+00
+
+
+1 e l e m e n t   d a t a
+
+      element   material  node 1    node 2    node 3    node 4
+          1         1         1         2         5         4
+          2         1         2         3         6         5
+          3         1         4         5         8         7
+          4         1         5         6         9         8
+14-node quadrilateral element patch test #1: constant x1 displacement            
+
+
+ e q u a t i o n    s y s t e m    d a t a              
+
+      number of equations . . . . . . . . . . . . (neq   ) =        2
+
+      number of terms in left-hand-side matrix  . (nalhs ) =        3
+
+      mean half bandwidth . . . . . . . . . . . . (meanbw) =        1
+
+      total length of blank common required . . . (nwords) =     1370
+1 d i s p l a c e m e n t s                  
+
+      step number =          1
+
+      time        =  1.000E+00
+
+
+      node no.             dof1             dof2
+          1           1.00000000E+00   0.00000000E+00
+          2           1.00000000E+00   0.00000000E+00
+          3           1.00000000E+00   0.00000000E+00
+          4           1.00000000E+00   0.00000000E+00
+          5           1.00000000E+00   5.71478717E-17
+          6           1.00000000E+00   0.00000000E+00
+          7           1.00000000E+00   0.00000000E+00
+          8           1.00000000E+00   0.00000000E+00
+          9           1.00000000E+00   0.00000000E+00
+1 e l e m e n t  s t r e s s e s   a n d   s t r a i n s 
+
+      element group number  . . . . . . . . . . . (neg   ) =     1
+
+
+  element  int. pt.         x1        x2           stress    stress    stress    stress    princ.    princ.    shear     stress  
+   number   number                                   11        22        12        33     stress 1  stress 2   stress     angle  
+
+                                                   strain    strain    strain    strain    princ.    princ.    shear     strain  
+                                                     11        22        12        33     strain 1  strain 2   strain     angle  
+
+      1       1          2.16E-01  2.02E-01      -6.76E-17 -1.54E-17  0.00E+00 -2.49E-17 -1.54E-17 -6.76E-17  2.61E-17  9.00E+01
+                                                 -5.55E-17  1.23E-17  0.00E+00  0.00E+00  1.23E-17 -5.55E-17  6.78E-17  9.00E+01
+
+      1       2          8.05E-01  1.78E-01      -4.46E-17  3.82E-17 -8.54E-17 -1.91E-18  9.17E-17 -9.81E-17  9.49E-17 -5.79E+01
+                                                 -5.55E-17  5.22E-17 -2.22E-16  0.00E+00  1.22E-16 -1.25E-16  2.47E-16 -5.79E+01
+
+      1       3          8.51E-01  6.64E-01      -2.71E-16 -6.22E-17 -8.54E-17 -9.99E-17 -3.17E-17 -3.01E-16  1.35E-16 -7.03E+01
+                                                 -2.22E-16  4.89E-17 -2.22E-16  0.00E+00  8.86E-17 -2.62E-16  3.50E-16 -7.03E+01
+
+      1       4          2.28E-01  7.55E-01      -2.92E-16 -1.12E-16  0.00E+00 -1.21E-16 -1.12E-16 -2.92E-16  8.99E-17  9.00E+01
+                                                 -2.22E-16  1.17E-17  0.00E+00  0.00E+00  1.17E-17 -2.22E-16  2.34E-16  9.00E+01
+
+      2       1          1.23E+00  1.78E-01       1.06E-16  1.06E-16 -4.84E-17  6.37E-17  1.55E-16  5.78E-17  4.84E-17 -4.49E+01
+                                                  5.55E-17  5.49E-17 -1.26E-16  0.00E+00  1.18E-16 -7.67E-18  1.26E-16 -4.49E+01
+
+      2       2          1.79E+00  2.02E-01       1.20E-16  6.54E-17 -1.56E-17  5.55E-17  1.24E-16  6.12E-17  3.13E-17 -1.50E+01
+                                                  8.33E-17  1.29E-17 -4.06E-17  0.00E+00  8.87E-17  7.45E-18  8.13E-17 -1.50E+01
+
+      2       3          1.81E+00  7.55E-01       3.07E-16  1.47E-16 -5.17E-17  1.36E-16  3.22E-16  1.31E-16  9.54E-17 -1.64E+01
+                                                  2.22E-16  1.37E-17 -1.35E-16  0.00E+00  2.42E-16 -6.10E-18  2.48E-16 -1.64E+01
+
+      2       4          1.27E+00  6.64E-01       3.33E-16  2.08E-16 -1.08E-16  1.62E-16  3.95E-16  1.45E-16  1.25E-16 -2.99E+01
+                                                  2.22E-16  5.90E-17 -2.81E-16  0.00E+00  3.03E-16 -2.19E-17  3.25E-16 -2.99E+01
+
+      3       1          2.28E-01  1.18E+00      -8.09E-17 -4.65E-17  0.00E+00 -3.82E-17 -4.65E-17 -8.09E-17  1.72E-17  9.00E+01
+                                                 -5.55E-17 -1.08E-17  0.00E+00  0.00E+00 -1.08E-17 -5.55E-17  4.47E-17  9.00E+01
+
+      3       2          8.51E-01  1.09E+00      -2.10E-17 -4.91E-17  1.07E-17 -2.10E-17 -1.74E-17 -5.27E-17  1.76E-17  1.86E+01
+                                                  0.00E+00 -3.64E-17  2.78E-17  0.00E+00  4.68E-18 -4.11E-17  4.58E-17  1.86E+01
+
+      3       3          8.05E-01  1.76E+00      -2.21E-17 -5.15E-17  6.41E-17 -2.21E-17  2.90E-17 -1.02E-16  6.57E-17  3.85E+01
+                                                  0.00E+00 -3.82E-17  1.67E-16  0.00E+00  6.63E-17 -1.05E-16  1.71E-16  3.85E+01
+
+      3       4          2.16E-01  1.78E+00      -6.55E-18 -1.53E-17  0.00E+00 -6.55E-18 -6.55E-18 -1.53E-17  4.37E-18  0.00E+00
+                                                  0.00E+00 -1.14E-17  0.00E+00  0.00E+00  0.00E+00 -1.14E-17  1.14E-17  0.00E+00
+
+      4       1          1.27E+00  1.09E+00       5.06E-17 -2.42E-17  8.54E-17  7.92E-18  1.06E-16 -8.00E-17  9.32E-17  3.32E+01
+                                                  5.55E-17 -4.18E-17  2.22E-16  0.00E+00  1.28E-16 -1.14E-16  2.42E-16  3.32E+01
+
+      4       2          1.81E+00  1.18E+00       2.92E-16  1.11E-16  0.00E+00  1.21E-16  2.92E-16  1.11E-16  9.02E-17  0.00E+00
+                                                  2.22E-16 -1.25E-17  0.00E+00  0.00E+00  2.22E-16 -1.25E-17  2.35E-16  0.00E+00
+
+      4       3          1.79E+00  1.78E+00       1.43E-16  4.81E-17  6.41E-17  5.72E-17  1.75E-16  1.58E-17  7.96E-17  2.68E+01
+                                                  1.11E-16 -1.18E-17  1.67E-16  0.00E+00  1.53E-16 -5.39E-17  2.07E-16  2.68E+01
+
+      4       4          1.23E+00  1.76E+00       1.27E-16  1.07E-17  0.00E+00  4.12E-17  1.27E-16  1.07E-17  5.80E-17  0.00E+00
+                                                  1.11E-16 -3.97E-17  0.00E+00  0.00E+00  1.11E-16 -3.97E-17  1.51E-16  0.00E+00
+1 d y n a m i c   s t o r a g e    a l l o c a t i o n   i n f o r m a t i o n 
+
+            array no.     array        address      dim1      dim2      dim3      prec.
+
+                  1       nstep             0         0         0         0         1
+                  2       ndprt             0         0         0         0         1
+                  3       nsprt             0         0         0         0         1
+                  4       nhplt             0         0         0         0         1
+                  5       niter             0         0         0         0         1
+                  6       alpha             0         0         0         0         2
+                  7       beta              0         0         0         0         2
+                  8       gamma             0         0         0         0         2
+                  9       dt                0         0         0         0         2
+                 10       d                 0         0         0         0         2
+                 11       x                 0         0         0         0         2
+                 12       id                0         0         0         0         1
+                 13       f                 0         0         0         0         2
+                 14       g                 0         0         0         0         2
+                 15       g1                0         0         0         0         2
+                 16       idiag             0         0         0         0         1
+                 17       ngrp              0         0         0         0         1
+
+              *****       begin element group number    1
+ 
+                 18       npar              0         0         0         0         1
+                 19       mp                0         0         0         0         1
+                 20       w                 0         0         0         0         2
+                 21       det               0         0         0         0         2
+                 22       r                 0         0         0         0         2
+                 23       shl               0         0         0         0         2
+                 24       shg               0         0         0         0         2
+                 25       shgbar            0         0         0         0         2
+                 26       rho               0         0         0         0         2
+                 27       rdampm            0         0         0         0         2
+                 28       rdampk            0         0         0         0         2
+                 29       th                0         0         0         0         2
+                 30       c                 0         0         0         0         2
+                 31       grav              0         0         0         0         2
+                 32       ien               0         0         0         0         1
+                 33       mat               0         0         0         0         1
+                 34       lm                0         0         0         0         1
+                 35       ielno             0         0         0         0         1
+                 36       iside             0         0         0         0         1
+                 37       press             0         0         0         0         2
+                 38       shear             0         0         0         0         2
+                 39       eleffm            0         0         0         0         2
+                 40       xl                0         0         0         0         2
+                 41       work              0         0         0         0         2
+                 42       b                 0         0         0         0         2
+                 43       dmat              0         0         0         0         2
+                 44       db                0         0         0         0         2
+                 45       vl                0         0         0         0         2
+                 46       al                0         0         0         0         2
+                 47       elresf            0         0         0         0         2
+                 48       dl                0         0         0         0         2
+                 49       strain            0         0         0         0         2
+                 50       stress            0         0         0         0         2
+1 d y n a m i c   s t o r a g e    a l l o c a t i o n   i n f o r m a t i o n 
+
+            array no.     array        address      dim1      dim2      dim3      prec.
+
+                 51       pstrn             0         0         0         0         2
+                 52       pstrs             0         0         0         0         2
+
+              *****       end element group data
+ 
+                 53       alhs              0         0         0         0         2
+                 54       brhs              0         0         0         0         2
+14-node quadrilateral element patch test #1: constant x1 displacement            
+
+
+      e x e c u t i o n   t i m i n g   i n f o r m a t i o n
+
+
+      i n i t i a l i z a t i o n   p h a s e        =  0.000E+00
+
+
+      s o l u t i o n   p h a s e                    =  0.000E+00
+
+
+          formation of left-hand-side matrices       =  0.000E+00
+
+          factorizations                             =  0.000E+00
+
+          formation of right-hand-side vectors       =  0.000E+00
+
+          forward reductions/back substitutions      =  0.000E+00
+
+          calculation of element output              =  0.000E+00
+                                                        _________
+
+          subtotal                                   =  0.000E+00

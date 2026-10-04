@@ -1,0 +1,26 @@
+   Neste diret¾rio esta contido 2 vers§es dos programas PPD e DLEARN.
+
+
+ DLEARN - ZACE: ContÚm o DLEARN atualizado em 1997 pela ZACE, empresa que 
+distribui o DLEARN via internet. AlÚm do executavÚl (subdiret¾rio EXEMPLOS), no 
+subdiret¾rio CODIGO FONTE esta contido o C¾digo Fonte de todas as rotinas e
+sub-rotinas que comp§em o sistema.
+
+
+ PPD - ZACE - Programa PPD, desenvolvido neste trabalho, para o DLEARN compilado
+pela ZACE ( 1997 ). ContÚm alÚm do PPD, compilado no Turbo Pascal 7.0, o c¾digo
+fonte do programa e 2 bibliotecas auxiliares do Turbo Pascal, sendo que uma foi  gerada 
+especialmente para a pesquisa.
+
+
+ DLEARN - Hermitiano: ContÚm o DLEARN compilado em 2001,gerado com os algoritimos 
+Hermitianos implementados pelo projeto de pesquisa do orientador. AlÚm do executavÚl,  no 
+subdiret¾rio CODIGO FONTE esta contido o C¾digo Fonte de todas as rotinas e
+sub-rotinas que comp§em o sistema.
+
+
+ PPD - Hermitiano - Programa PPD desenvolvido neste trabalho, para o DLEARN compilado 
+pela com os Algoritimos Hermitianos (2001) implementados no projeto de pesquisa do
+orientador ( heitor@feb.unesp.br). ContÚm alÚm do PPD, compilado pelo Turbo Pascal 7.0, 
+o c¾digo fonte do programa e 2 bibliotecas auxiliares do Turbo Pascal, sendo que uma foi 
+gerada especialmente para a iniciaþÒo.

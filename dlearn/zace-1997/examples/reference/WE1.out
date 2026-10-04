@@ -1,0 +1,361 @@
+1 1 BRICKC ELEMENT (8 NODES) 10 * 10 * 10                                        
+
+
+ e x e c u t i o n   c o n t r o l   i n f o r m a t i o n 
+
+      execution code  . . . . . . . . . . . . . . (iexec ) =     1
+
+         eq. 0, data check                                   
+         eq. 1, execution                                    
+
+      analysis code . . . . . . . . . . . . . . . (iacode) =     1
+
+         eq. 0, dynamic analysis                             
+         eq. 1, static analysis                              
+
+      read restart file code  . . . . . . . . . . (ireadr) =     0
+
+         eq. 0, do not read restart file                     
+         eq. 1, read restart file                            
+
+      write restart file code . . . . . . . . . . (iwritr) =     0
+
+         eq. 0, do not write restart file                    
+         eq. 1, write restart file                           
+
+      input data print code . . . . . . . . . . . (iprtin) =     0
+
+         eq. 0, print nodal and element input data           
+         eq. 1, do not print nodal and element input data    
+
+      rank check code . . . . . . . . . . . . . . (irank ) =     0
+
+         eq. 0, do not perform rank check                    
+         eq. 1, print numbers of zero and negative pivots    
+         eq. 2, print all pivots                             
+
+      number of time sequences  . . . . . . . . . (numseq) =     1
+
+      number of nodal output time-histories . . . (ndout ) =     0
+
+      number of space dimensions  . . . . . . . . (nsd   ) =     3
+
+      number of nodal points  . . . . . . . . . . (numnp ) =     8
+
+      number of nodal degrees-of-freedom  . . . . (ndof  ) =     3
+
+      number of load vectors  . . . . . . . . . . (nlvect) =     1
+
+      number of load-time functions . . . . . . . (nltftn) =     1
+
+      number of points on load-time functions . . (nptslf) =     1
+
+      number of element groups  . . . . . . . . . (numeg ) =     1
+
+
+1 t i m e   s e q u e n c e   d a t a      
+
+      number of time sequences . . . . . . (numseq  ) =     1
+
+
+
+      time sequence number . . . . . . . . (n       ) =     1
+
+      number of time steps . . . . . . . . (nstep(n)) =     1
+
+      kinematic print increment  . . . . . (ndprt(n)) =     1
+
+      stress/strain print increment  . . . (nsprt(n)) =     1
+
+      time history plot increment  . . . . (nhplt(n)) =     0
+
+      number of iterations . . . . . . . . (niter(n)) =     1
+
+      first integration parameter  . . . . (alpha(n)) =  0.00000E+00
+
+      second integration parameter . . . . (beta(n) ) =  1.00000E+00
+
+      third integration parameter  . . . . (gamma(n)) =  0.00000E+00
+
+      time step  . . . . . . . . . . . . . (dt(n)   ) =  1.00000E+00
+
+
+
+
+1 n o d a l   c o o r d i n a t e   d a t a 
+
+
+      node no.              x1               x2               x3 
+          1           0.00000000E+00   0.00000000E+00   0.00000000E+00
+          2           1.00000000E+01   0.00000000E+00   0.00000000E+00
+          3           1.00000000E+01   1.00000000E+01   0.00000000E+00
+          4           0.00000000E+00   1.00000000E+01   0.00000000E+00
+          5           0.00000000E+00   0.00000000E+00   1.00000000E+01
+          6           1.00000000E+01   0.00000000E+00   1.00000000E+01
+          7           1.00000000E+01   1.00000000E+01   1.00000000E+01
+          8           0.00000000E+00   1.00000000E+01   1.00000000E+01
+1 n o d a l   b o u n d a r y   c o n d i t i o n   c o d e s
+
+
+      node no.         dof1      dof2      dof3
+          1              1         1         1
+          2              0         1         1
+          3              0         0         1
+          4              1         0         1
+          5              1         1         0
+          6              0         1         0
+          8              1         0         0
+1 p r e s c r i b e d   f o r c e s   a n d   k i n e m a t i c   b o u n d a r y   c o n d i t i o n s
+
+      load vector number =     1
+
+
+      node no.             dof1             dof2             dof3
+          5           0.00000000E+00   0.00000000E+00  -2.50000000E+01
+          6           0.00000000E+00   0.00000000E+00  -2.50000000E+01
+          7           0.00000000E+00   0.00000000E+00  -2.50000000E+01
+          8           0.00000000E+00   0.00000000E+00  -2.50000000E+01
+1 l o a d - t i m e   f u n c t i o n   d a t a 
+
+      number of load-time funtions . . . . . (nltftn  ) =     1
+
+
+
+      function number     1
+
+                time             load factor
+
+           0.00000000E+00      1.00000000E+00
+1 e l e m e n t   g r o u p   d a t a         
+
+      element group number  . . . . . . . . . . . (neg   ) =     1
+
+
+
+  e i g h t - n o d e   b r i c k   e l e m e n t s
+
+      element type number . . . . . . . . . . . . (ntype ) =     3
+
+      number of elements  . . . . . . . . . . . . (numel ) =     1
+
+      number of element material sets . . . . . . (numat ) =     1
+
+      number of surface force cards . . . . . . . (nsurf ) =     0
+
+      number of stress/strain time histories  . . (nsout ) =     0
+
+      free option . . . . . . . . . . . . . . . . (iopt  ) =     0
+
+      stress output print code  . . . . . . . . . (istprt) =     0
+
+         eq.0, stress output printed                         
+         eq.1, stress output not printed                     
+
+      surface force load-time function number . . (lfsurf) =     0
+
+      body force load-time function number  . . . (lfbody) =     0
+
+      numerical integration code  . . . . . . . . (nicode) =     0
+
+         eq.0, 2 x 2 x 2 gaussian quadrature                 
+         eq.1, 1-point   gaussian quadrature                 
+
+      strain-displacement option  . . . . . . . . (ibbar ) =     0
+
+         eq.0, standard formulation                          
+         eq.1, b-bar formulation                             
+
+1 m a t e r i a l   s e t   d a t a                      
+
+      number of material sets . . . . . . . . . . (numat ) =     1
+
+
+       set     young's    poisson's     mass        mass      stiffness
+      number   modulus      ratio      density     damping     damping
+
+        1     1.0000E+00  1.0000E-01  0.0000E+00  0.0000E+00  0.0000E+00
+
+
+
+
+  g r a v i t y   v e c t o r   c o m p o n e n t s      
+
+      x-1 direction . . . . . . . . . . . . . . =  0.00000000E+00
+
+      x-2 direction . . . . . . . . . . . . . . =  0.00000000E+00
+
+      x-3 direction . . . . . . . . . . . . . . =  0.00000000E+00
+
+
+1 e l e m e n t   d a t a
+
+      element   material  node 1    node 2    node 3    node 4    node 5    node 6    node 7    node 8
+          1         1         1         2         3         4         5         6         7         8
+1 1 BRICKC ELEMENT (8 NODES) 10 * 10 * 10                                        
+
+
+ e q u a t i o n    s y s t e m    d a t a              
+
+      number of equations . . . . . . . . . . . . (neq   ) =       12
+
+      number of terms in left-hand-side matrix  . (nalhs ) =       78
+
+      mean half bandwidth . . . . . . . . . . . . (meanbw) =        6
+
+      total length of blank common required . . . (nwords) =     4173
+1 d i s p l a c e m e n t s                  
+
+      step number =          1
+
+      time        =  1.000E+00
+
+
+      node no.             dof1             dof2             dof3
+          2           1.00000000E+00   0.00000000E+00   0.00000000E+00
+          3           1.00000000E+00   1.00000000E+00   0.00000000E+00
+          4           0.00000000E+00   1.00000000E+00   0.00000000E+00
+          5           0.00000000E+00   0.00000000E+00  -1.00000000E+01
+          6           1.00000000E+00   0.00000000E+00  -1.00000000E+01
+          7           1.00000000E+00   1.00000000E+00  -1.00000000E+01
+          8           0.00000000E+00   1.00000000E+00  -1.00000000E+01
+1 e l e m e n t  s t r e s s e s   a n d   s t r a i n s 
+
+      element group number  . . . . . . . . . . . (neg   ) =     1
+
+
+  element  int. pt.         x1        x2        x3           stress    stress    stress    stress    stress    stress  
+   number   number                                             11        22        33        12        23        31
+                                                            stress 1  stress 2   stress 3  
+
+                                                             strain    strain    strain    strain    strain    strain  
+                                                               11        22        33        12        23        31
+                                                            strain 1  strain 2   strain 3  
+
+      1       1          2.11E+00  2.11E+00  0.00E+00       5.55E-17  4.16E-17 -1.00E+00 -3.94E-18 -1.26E-17  1.89E-17
+                                                            3.56E-05 -3.56E-05 -1.00E+00
+                                                            1.00E-01  1.00E-01 -1.00E+00 -8.67E-18 -2.78E-17  4.16E-17
+                                                            1.00E-01  1.00E-01 -1.00E+00
+
+      1       2          7.89E+00  2.11E+00  0.00E+00       6.94E-17  5.55E-17 -1.00E+00 -1.70E-17 -3.15E-18 -1.26E-17
+                                                            3.56E-05 -3.56E-05 -1.00E+00
+                                                            1.00E-01  1.00E-01 -1.00E+00 -3.73E-17 -6.94E-18 -2.78E-17
+                                                            1.00E-01  1.00E-01 -1.00E+00
+
+      1       3          7.89E+00  7.89E+00  0.00E+00       1.39E-17  1.39E-17 -1.00E+00 -1.73E-17 -4.10E-17 -1.26E-17
+                                                            3.56E-05 -3.56E-05 -1.00E+00
+                                                            1.00E-01  1.00E-01 -1.00E+00 -3.82E-17 -9.02E-17 -2.78E-17
+                                                            1.00E-01  1.00E-01 -1.00E+00
+
+      1       4          2.11E+00  7.89E+00  0.00E+00       4.16E-17  6.94E-17 -1.00E+00 -6.31E-18 -6.31E-17  0.00E+00
+                                                            3.56E-05 -3.56E-05 -1.00E+00
+                                                            1.00E-01  1.00E-01 -1.00E+00 -1.39E-17 -1.39E-16  0.00E+00
+                                                            1.00E-01  1.00E-01 -1.00E+00
+
+      1       5          2.11E+00  2.11E+00  0.00E+00      -5.55E-17 -1.53E-16 -1.00E+00  4.73E-18  1.01E-16  8.83E-17
+                                                            3.56E-05 -3.56E-05 -1.00E+00
+                                                            1.00E-01  1.00E-01 -1.00E+00  1.04E-17  2.22E-16  1.94E-16
+                                                            1.00E-01  1.00E-01 -1.00E+00
+
+      1       6          7.89E+00  2.11E+00  0.00E+00       0.00E+00 -4.16E-17 -1.00E+00  6.31E-18  1.26E-17  2.52E-17
+                                                            3.56E-05 -3.56E-05 -1.00E+00
+                                                            1.00E-01  1.00E-01 -1.00E+00  1.39E-17  2.78E-17  5.55E-17
+                                                            1.00E-01  1.00E-01 -1.00E+00
+
+      1       7          7.89E+00  7.89E+00  0.00E+00      -1.39E-17 -5.55E-17 -1.00E+00  2.52E-17 -3.78E-17  0.00E+00
+                                                            3.56E-05 -3.56E-05 -1.00E+00
+                                                            1.00E-01  1.00E-01 -1.00E+00  5.55E-17 -8.33E-17  0.00E+00
+                                                            1.00E-01  1.00E-01 -1.00E+00
+
+      1       8          2.11E+00  7.89E+00  0.00E+00      -2.78E-17 -9.71E-17 -1.00E+00  2.52E-17  0.00E+00  0.00E+00
+                                                            3.56E-05 -3.56E-05 -1.00E+00
+                                                            1.00E-01  1.00E-01 -1.00E+00  5.55E-17  0.00E+00  0.00E+00
+                                                            1.00E-01  1.00E-01 -1.00E+00
+1 d y n a m i c   s t o r a g e    a l l o c a t i o n   i n f o r m a t i o n 
+
+            array no.     array        address      dim1      dim2      dim3      prec.
+
+                  1       nstep             0         0         0         0         1
+                  2       ndprt             0         0         0         0         1
+                  3       nsprt             0         0         0         0         1
+                  4       nhplt             0         0         0         0         1
+                  5       niter             0         0         0         0         1
+                  6       alpha             0         0         0         0         2
+                  7       beta              0         0         0         0         2
+                  8       gamma             0         0         0         0         2
+                  9       dt                0         0         0         0         2
+                 10       d                 0         0         0         0         2
+                 11       x                 0         0         0         0         2
+                 12       id                0         0         0         0         1
+                 13       f                 0         0         0         0         2
+                 14       g                 0         0         0         0         2
+                 15       g1                0         0         0         0         2
+                 16       idiag             0         0         0         0         1
+                 17       ngrp              0         0         0         0         1
+
+              *****       begin element group number    1
+ 
+                 18       npar              0         0         0         0         1
+                 19       mp                0         0         0         0         1
+                 20       w                 0         0         0         0         2
+                 21       det               0         0         0         0         2
+                 22       shl               0         0         0         0         2
+                 23       shg               0         0         0         0         2
+                 24       shgbar            0         0         0         0         2
+                 25       rho               0         0         0         0         2
+                 26       rdampm            0         0         0         0         2
+                 27       rdampk            0         0         0         0         2
+                 28       c                 0         0         0         0         2
+                 29       grav              0         0         0         0         2
+                 30       ien               0         0         0         0         1
+                 31       mat               0         0         0         0         1
+                 32       lm                0         0         0         0         1
+                 33       ielno             0         0         0         0         1
+                 34       iside             0         0         0         0         1
+                 35       press             0         0         0         0         2
+                 36       eleffm            0         0         0         0         2
+                 37       xl                0         0         0         0         2
+                 38       work              0         0         0         0         2
+                 39       b                 0         0         0         0         2
+                 40       dmat              0         0         0         0         2
+                 41       db                0         0         0         0         2
+                 42       vl                0         0         0         0         2
+                 43       al                0         0         0         0         2
+                 44       elresf            0         0         0         0         2
+                 45       dl                0         0         0         0         2
+                 46       strain            0         0         0         0         2
+                 47       stress            0         0         0         0         2
+                 48       pstrn             0         0         0         0         2
+                 49       pstrs             0         0         0         0         2
+
+              *****       end element group data
+ 
+                 50       alhs              0         0         0         0         2
+1 d y n a m i c   s t o r a g e    a l l o c a t i o n   i n f o r m a t i o n 
+
+            array no.     array        address      dim1      dim2      dim3      prec.
+
+                 51       brhs              0         0         0         0         2
+1 1 BRICKC ELEMENT (8 NODES) 10 * 10 * 10                                        
+
+
+      e x e c u t i o n   t i m i n g   i n f o r m a t i o n
+
+
+      i n i t i a l i z a t i o n   p h a s e        =  0.000E+00
+
+
+      s o l u t i o n   p h a s e                    =  0.000E+00
+
+
+          formation of left-hand-side matrices       =  0.000E+00
+
+          factorizations                             =  0.000E+00
+
+          formation of right-hand-side vectors       =  0.000E+00
+
+          forward reductions/back substitutions      =  0.000E+00
+
+          calculation of element output              =  0.000E+00
+                                                        _________
+
+          subtotal                                   =  0.000E+00

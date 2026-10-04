@@ -1,0 +1,50 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below, together with Hughes (1987) for DLEARN and Bottura & Laier (1999) for the Hermitian algorithms."
+title: "dlearn-ppd: DLEARN finite-element program (Hughes 1987 / ZACE 1997 / UNESP Hermitian 2001) and its pre-processor PPD"
+type: software
+authors:
+  - family-names: Junqueira
+    given-names: Luiz Eduardo Lollato
+    affiliation: "Luiz Junqueira Advisory, Regensdorf, Switzerland (formerly UNESP Bauru)"
+version: 2.0.0
+date-released: 2026-10-04
+license: MIT
+repository-code: "https://github.com/junqueirach/dlearn-ppd"
+keywords:
+  - finite element method
+  - structural dynamics
+  - DLEARN
+  - Hermitian algorithms
+  - time integration
+  - pre-processor
+references:
+  - type: book
+    authors:
+      - family-names: Hughes
+        given-names: Thomas J. R.
+    title: "The Finite Element Method: Linear Static and Dynamic Finite Element Analysis"
+    publisher:
+      name: Prentice-Hall
+    year: 1987
+    notes: "Dover reprint 2000, ISBN 978-0-486-41181-1"
+  - type: article
+    authors:
+      - family-names: Bottura
+        given-names: Heitor Miranda
+      - family-names: Laier
+        given-names: José Elias
+    title: "Uma família de algoritmos hermitianos para a integração direta das equações de dinâmica das estruturas"
+    journal: "Cadernos de Engenharia de Estruturas (EESC-USP)"
+    volume: 14
+    year: 1999
+    start: 1
+    end: 27
+  - type: thesis
+    authors:
+      - family-names: Junqueira
+        given-names: Luiz Eduardo Lollato
+    title: "Geração de arquivos de dados para software de análise estrutural"
+    institution:
+      name: "Universidade Estadual Paulista (UNESP), Faculdade de Engenharia de Bauru"
+    year: 2001
+    notes: "Trabalho de graduação em Engenharia Civil. Orientador: Heitor Miranda Bottura."

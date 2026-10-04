@@ -1,0 +1,544 @@
+1plane strain cantilever beam: dynamic analysis with alpha method                
+
+
+ e x e c u t i o n   c o n t r o l   i n f o r m a t i o n 
+
+      execution code  . . . . . . . . . . . . . . (iexec ) =     1
+
+         eq. 0, data check                                   
+         eq. 1, execution                                    
+
+      analysis code . . . . . . . . . . . . . . . (iacode) =     0
+
+         eq. 0, dynamic analysis                             
+         eq. 1, static analysis                              
+
+      read restart file code  . . . . . . . . . . (ireadr) =     0
+
+         eq. 0, do not read restart file                     
+         eq. 1, read restart file                            
+
+      write restart file code . . . . . . . . . . (iwritr) =     0
+
+         eq. 0, do not write restart file                    
+         eq. 1, write restart file                           
+
+      input data print code . . . . . . . . . . . (iprtin) =     0
+
+         eq. 0, print nodal and element input data           
+         eq. 1, do not print nodal and element input data    
+
+      rank check code . . . . . . . . . . . . . . (irank ) =     0
+
+         eq. 0, do not perform rank check                    
+         eq. 1, print numbers of zero and negative pivots    
+         eq. 2, print all pivots                             
+
+      number of time sequences  . . . . . . . . . (numseq) =     1
+
+      number of nodal output time-histories . . . (ndout ) =     1
+
+      number of space dimensions  . . . . . . . . (nsd   ) =     2
+
+      number of nodal points  . . . . . . . . . . (numnp ) =    45
+
+      number of nodal degrees-of-freedom  . . . . (ndof  ) =     2
+
+      number of load vectors  . . . . . . . . . . (nlvect) =     1
+
+      number of load-time functions . . . . . . . (nltftn) =     1
+
+      number of points on load-time functions . . (nptslf) =     1
+
+      number of element groups  . . . . . . . . . (numeg ) =     1
+
+
+1 t i m e   s e q u e n c e   d a t a      
+
+      number of time sequences . . . . . . (numseq  ) =     1
+
+
+
+      time sequence number . . . . . . . . (n       ) =     1
+
+      number of time steps . . . . . . . . (nstep(n)) =   100
+
+      kinematic print increment  . . . . . (ndprt(n)) =     0
+
+      stress/strain print increment  . . . (nsprt(n)) =     0
+
+      time history plot increment  . . . . (nhplt(n)) =     2
+
+      number of iterations . . . . . . . . (niter(n)) =     1
+
+      first integration parameter  . . . . (alpha(n)) = -1.00000E-01
+
+      second integration parameter . . . . (beta(n) ) =  3.02500E-01
+
+      third integration parameter  . . . . (gamma(n)) =  6.00000E-01
+
+      time step  . . . . . . . . . . . . . (dt(n)   ) =  2.50000E-04
+
+
+
+
+1 n o d a l   t i m e - h i s t o r y   i n f o r m a t i o n
+
+      number of nodal time histories  . . . . . . (ndout ) =     1
+
+
+         node      dof     kinematic 
+        number    number     type    
+
+          45         2       disp
+1 n o d a l   c o o r d i n a t e   d a t a 
+
+
+      node no.              x1               x2 
+          1           0.00000000E+00   0.00000000E+00
+          2           0.00000000E+00   5.00000000E-01
+          3           0.00000000E+00   1.00000000E+00
+          4           0.00000000E+00   1.50000000E+00
+          5           0.00000000E+00   2.00000000E+00
+          6           2.00000000E+00   0.00000000E+00
+          7           2.00000000E+00   5.00000000E-01
+          8           2.00000000E+00   1.00000000E+00
+          9           2.00000000E+00   1.50000000E+00
+         10           2.00000000E+00   2.00000000E+00
+         11           4.00000000E+00   0.00000000E+00
+         12           4.00000000E+00   5.00000000E-01
+         13           4.00000000E+00   1.00000000E+00
+         14           4.00000000E+00   1.50000000E+00
+         15           4.00000000E+00   2.00000000E+00
+         16           6.00000000E+00   0.00000000E+00
+         17           6.00000000E+00   5.00000000E-01
+         18           6.00000000E+00   1.00000000E+00
+         19           6.00000000E+00   1.50000000E+00
+         20           6.00000000E+00   2.00000000E+00
+         21           8.00000000E+00   0.00000000E+00
+         22           8.00000000E+00   5.00000000E-01
+         23           8.00000000E+00   1.00000000E+00
+         24           8.00000000E+00   1.50000000E+00
+         25           8.00000000E+00   2.00000000E+00
+         26           1.00000000E+01   0.00000000E+00
+         27           1.00000000E+01   5.00000000E-01
+         28           1.00000000E+01   1.00000000E+00
+         29           1.00000000E+01   1.50000000E+00
+         30           1.00000000E+01   2.00000000E+00
+         31           1.20000000E+01   0.00000000E+00
+         32           1.20000000E+01   5.00000000E-01
+         33           1.20000000E+01   1.00000000E+00
+         34           1.20000000E+01   1.50000000E+00
+         35           1.20000000E+01   2.00000000E+00
+         36           1.40000000E+01   0.00000000E+00
+         37           1.40000000E+01   5.00000000E-01
+         38           1.40000000E+01   1.00000000E+00
+         39           1.40000000E+01   1.50000000E+00
+         40           1.40000000E+01   2.00000000E+00
+         41           1.60000000E+01   0.00000000E+00
+         42           1.60000000E+01   5.00000000E-01
+         43           1.60000000E+01   1.00000000E+00
+         44           1.60000000E+01   1.50000000E+00
+         45           1.60000000E+01   2.00000000E+00
+1 n o d a l   b o u n d a r y   c o n d i t i o n   c o d e s
+
+
+      node no.         dof1      dof2
+          1              1         1
+          5              1         0
+          6              1         0
+         11              1         0
+         16              1         0
+         21              1         0
+         26              1         0
+         31              1         0
+         36              1         0
+         41              1         0
+1 p r e s c r i b e d   f o r c e s   a n d   k i n e m a t i c   b o u n d a r y   c o n d i t i o n s
+
+      load vector number =     1
+
+
+      node no.             dof1             dof2
+          2          -7.50000000E-01   1.73830000E-01
+          3          -1.50000000E+00   1.38670000E-01
+          4          -2.25000000E+00   8.00800000E-02
+          5           0.00000000E+00   1.46500000E-02
+         41           0.00000000E+00  -9.28000000E-02
+         42           0.00000000E+00  -1.73830000E-01
+         43           0.00000000E+00  -1.38670000E-01
+         44           0.00000000E+00  -8.00800000E-02
+         45           0.00000000E+00  -1.46500000E-02
+1 l o a d - t i m e   f u n c t i o n   d a t a 
+
+      number of load-time funtions . . . . . (nltftn  ) =     1
+
+
+
+      function number     1
+
+                time             load factor
+
+           0.00000000E+00      1.00000000E+03
+1
+
+ there are no nonzero initial displacements
+1
+
+ there are no nonzero initial velocities   
+1
+
+ there are no nonzero initial accelerations
+1 e l e m e n t   g r o u p   d a t a         
+
+      element group number  . . . . . . . . . . . (neg   ) =     1
+
+
+
+  f o u r - n o d e   q u a d r i l a t e r a l   e l e m e n t s
+
+      element type number . . . . . . . . . . . . (ntype ) =     1
+
+      number of elements  . . . . . . . . . . . . (numel ) =    32
+
+      number of element material sets . . . . . . (numat ) =     1
+
+      number of surface force cards . . . . . . . (nsurf ) =     0
+
+      number of stress/strain time histories  . . (nsout ) =     1
+
+      analysis option . . . . . . . . . . . . . . (iopt  ) =     1
+
+         eq.0, plane stress                                  
+         eq.1, plane strain                                  
+         eq.2, axisymmetric                                  
+
+      stress output print code  . . . . . . . . . (istprt) =     0
+
+         eq.0, stress output printed                         
+         eq.1, stress output not printed                     
+
+      surface force load-time function number . . (lfsurf) =     0
+
+      body force load-time function number  . . . (lfbody) =     0
+
+      numerical integration code  . . . . . . . . (nicode) =     0
+
+         eq.0, 2 x 2 gaussian quadrature                     
+         eq.1, 1-point gaussian quadrature                   
+
+      strain-displacement option  . . . . . . . . (ibbar ) =     0
+
+         eq.0, standard formulation                          
+         eq.1, b-bar formulation                             
+
+      mass type code  . . . . . . . . . . . . . . (imass ) =     0
+
+         eq.0, consistent mass matrix                        
+         eq.1, lumped mass matrix                            
+         eq.2, no mass matrix                                
+
+      implicit/explicit code  . . . . . . . . . . (impexp) =     0
+
+         eq.0, implicit element group                        
+         eq.1, explicit element group                        
+
+
+1 m a t e r i a l   s e t   d a t a                      
+
+      number of material sets . . . . . . . . . . (numat ) =     1
+
+
+       set     young's    poisson's     mass        mass      stiffness   thickness
+      number   modulus      ratio      density     damping     damping
+
+        1     2.0800E+06  3.0000E-01  2.0000E-03  0.0000E+00  0.0000E+00  1.0000E+00
+
+
+
+
+  g r a v i t y   v e c t o r   c o m p o n e n t s      
+
+      x-1 direction . . . . . . . . . . . . . . =  0.00000000E+00
+
+      x-2 direction . . . . . . . . . . . . . . =  0.00000000E+00
+
+
+1 e l e m e n t   d a t a
+
+      element   material  node 1    node 2    node 3    node 4
+          1         1         1         6         7         2
+          2         1         2         7         8         3
+          3         1         3         8         9         4
+          4         1         4         9        10         5
+          5         1         6        11        12         7
+          6         1         7        12        13         8
+          7         1         8        13        14         9
+          8         1         9        14        15        10
+          9         1        11        16        17        12
+         10         1        12        17        18        13
+         11         1        13        18        19        14
+         12         1        14        19        20        15
+         13         1        16        21        22        17
+         14         1        17        22        23        18
+         15         1        18        23        24        19
+         16         1        19        24        25        20
+         17         1        21        26        27        22
+         18         1        22        27        28        23
+         19         1        23        28        29        24
+         20         1        24        29        30        25
+         21         1        26        31        32        27
+         22         1        27        32        33        28
+         23         1        28        33        34        29
+         24         1        29        34        35        30
+         25         1        31        36        37        32
+         26         1        32        37        38        33
+         27         1        33        38        39        34
+         28         1        34        39        40        35
+         29         1        36        41        42        37
+         30         1        37        42        43        38
+         31         1        38        43        44        39
+         32         1        39        44        45        40
+1 e l e m e n t   t i m e   h i s t o r y   i n f o r m a t i o n 
+
+      number of stress/strain time histories  . . (nsout ) =     1
+
+
+        element   int pt   component
+        number    number            
+
+          20         4       s 11
+1plane strain cantilever beam: dynamic analysis with alpha method                
+
+
+ e q u a t i o n    s y s t e m    d a t a              
+
+      number of equations . . . . . . . . . . . . (neq   ) =       79
+
+      number of terms in left-hand-side matrix  . (nalhs ) =      872
+
+      mean half bandwidth . . . . . . . . . . . . (meanbw) =       11
+
+      total length of blank common required . . . (nwords) =     5196
+1plane strain cantilever beam: dynamic analysis with alpha method                
+
+
+ node number =    45
+
+ dof number  =     2     output: disp
+
+
+     time        value      -2.1102E-01                                0.0000E+00
+  ----------   ----------   -----------------------------------------------------
+  0.0000E+00   0.0000E+00                                                       *
+  5.0000E-04  -5.4078E-03                                                      * 
+  1.0000E-03  -1.8582E-02                                                   *    
+  1.5000E-03  -3.3184E-02                                               *        
+  2.0000E-03  -4.6195E-02                                            *           
+  2.5000E-03  -6.2725E-02                                        *               
+  3.0000E-03  -8.8417E-02                                 *                      
+  3.5000E-03  -1.1853E-01                          *                             
+  4.0000E-03  -1.4416E-01                   *                                    
+  4.5000E-03  -1.6146E-01               *                                        
+  5.0000E-03  -1.7541E-01           *                                            
+  5.5000E-03  -1.9146E-01       *                                                
+  6.0000E-03  -2.0595E-01    *                                                   
+  6.5000E-03  -2.1102E-01   *                                                    
+  7.0000E-03  -2.0382E-01    *                                                   
+  7.5000E-03  -1.9046E-01        *                                               
+  8.0000E-03  -1.7812E-01           *                                            
+  8.5000E-03  -1.6520E-01              *                                         
+  9.0000E-03  -1.4554E-01                   *                                    
+  9.5000E-03  -1.1748E-01                          *                             
+  1.0000E-02  -8.8231E-02                                 *                      
+  1.0500E-02  -6.5911E-02                                       *                
+  1.1000E-02  -4.9822E-02                                           *            
+  1.1500E-02  -3.4154E-02                                               *        
+  1.2000E-02  -1.6705E-02                                                   *    
+  1.2500E-02  -3.9318E-03                                                       *
+  1.3000E-02  -2.8680E-03                                                       *
+  1.3500E-02  -1.1958E-02                                                    *   
+  1.4000E-02  -2.3960E-02                                                 *      
+  1.4500E-02  -3.4801E-02                                               *        
+  1.5000E-02  -4.9081E-02                                           *            
+  1.5500E-02  -7.2129E-02                                     *                  
+  1.6000E-02  -1.0136E-01                              *                         
+  1.6500E-02  -1.2838E-01                       *                                
+  1.7000E-02  -1.4806E-01                  *                                     
+  1.7500E-02  -1.6424E-01              *                                         
+  1.8000E-02  -1.8210E-01          *                                             
+  1.8500E-02  -1.9972E-01     *                                                  
+  1.9000E-02  -2.0945E-01   *                                                    
+  1.9500E-02  -2.0710E-01   *                                                    
+  2.0000E-02  -1.9753E-01      *                                                 
+  2.0500E-02  -1.8743E-01        *                                               
+  2.1000E-02  -1.7690E-01           *                                            
+  2.1500E-02  -1.6005E-01               *                                        
+  2.2000E-02  -1.3415E-01                      *                                 
+  2.2500E-02  -1.0517E-01                             *                          
+  2.3000E-02  -8.0990E-02                                   *                    
+  2.3500E-02  -6.2825E-02                                        *               
+  2.4000E-02  -4.5339E-02                                            *           
+  2.4500E-02  -2.5752E-02                                                 *      
+  2.5000E-02  -9.3527E-03                                                     *  
+1plane strain cantilever beam: dynamic analysis with alpha method                
+
+
+ element number            =    20
+
+ integration point number  =     4     output: s 11
+
+
+     time        value       0.0000E+00                                4.4685E+03
+  ----------   ----------   -----------------------------------------------------
+  0.0000E+00   0.0000E+00   *                                                    
+  5.0000E-04   4.6883E+02        *                                               
+  1.0000E-03   1.7634E+03                       *                                
+  1.5000E-03   2.1571E+03                            *                           
+  2.0000E-03   1.5223E+03                     *                                  
+  2.5000E-03   8.3195E+02            *                                           
+  3.0000E-03   1.5578E+03                     *                                  
+  3.5000E-03   2.9402E+03                                     *                  
+  4.0000E-03   3.6048E+03                                             *          
+  4.5000E-03   3.0491E+03                                       *                
+  5.0000E-03   2.2760E+03                             *                          
+  5.5000E-03   2.8644E+03                                    *                   
+  6.0000E-03   4.0393E+03                                                  *     
+  6.5000E-03   4.4685E+03                                                       *
+  7.0000E-03   3.5778E+03                                             *          
+  7.5000E-03   2.5135E+03                                *                       
+  8.0000E-03   2.6804E+03                                  *                     
+  8.5000E-03   3.4800E+03                                            *           
+  9.0000E-03   3.6342E+03                                              *         
+  9.5000E-03   2.4908E+03                                *                       
+  1.0000E-02   1.2421E+03                 *                                      
+  1.0500E-02   1.2176E+03                 *                                      
+  1.1000E-02   1.9710E+03                          *                             
+  1.1500E-02   2.2058E+03                             *                          
+  1.2000E-02   1.2270E+03                 *                                      
+  1.2500E-02   1.9409E+02     *                                                  
+  1.3000E-02   3.8807E+02       *                                                
+  1.3500E-02   1.4569E+03                    *                                   
+  1.4000E-02   2.0683E+03                           *                            
+  1.4500E-02   1.4862E+03                    *                                   
+  1.5000E-02   8.0191E+02            *                                           
+  1.5500E-02   1.2554E+03                 *                                      
+  1.6000E-02   2.5711E+03                                 *                      
+  1.6500E-02   3.3970E+03                                           *            
+  1.7000E-02   2.9637E+03                                      *                 
+  1.7500E-02   2.3049E+03                              *                         
+  1.8000E-02   2.6465E+03                                  *                     
+  1.8500E-02   3.8000E+03                                                *       
+  1.9000E-02   4.4250E+03                                                       *
+  1.9500E-02   3.7470E+03                                               *        
+  2.0000E-02   2.7592E+03                                   *                    
+  2.0500E-02   2.6999E+03                                   *                    
+  2.1000E-02   3.4782E+03                                            *           
+  2.1500E-02   3.7809E+03                                               *        
+  2.2000E-02   2.8405E+03                                    *                   
+  2.2500E-02   1.6044E+03                      *                                 
+  2.3000E-02   1.3247E+03                  *                                     
+  2.3500E-02   1.9881E+03                          *                             
+  2.4000E-02   2.2995E+03                              *                         
+  2.4500E-02   1.4800E+03                    *                                   
+  2.5000E-02   4.0438E+02       *                                                
+1 d y n a m i c   s t o r a g e    a l l o c a t i o n   i n f o r m a t i o n 
+
+            array no.     array        address      dim1      dim2      dim3      prec.
+
+                  1       nstep             0         0         0         0         1
+                  2       ndprt             0         0         0         0         1
+                  3       nsprt             0         0         0         0         1
+                  4       nhplt             0         0         0         0         1
+                  5       niter             0         0         0         0         1
+                  6       alpha             0         0         0         0         2
+                  7       beta              0         0         0         0         2
+                  8       gamma             0         0         0         0         2
+                  9       dt                0         0         0         0         2
+                 10       idhist            0         0         0         0         1
+                 11       dout              0         0         0         0         1
+                 12       vpred             0         0         0         0         2
+                 13       dpred             0         0         0         0         2
+                 14       a                 0         0         0         0         2
+                 15       v                 0         0         0         0         2
+                 16       d                 0         0         0         0         2
+                 17       x                 0         0         0         0         2
+                 18       id                0         0         0         0         1
+                 19       f                 0         0         0         0         2
+                 20       g                 0         0         0         0         2
+                 21       g1                0         0         0         0         2
+                 22       idiag             0         0         0         0         1
+                 23       ngrp              0         0         0         0         1
+
+              *****       begin element group number    1
+ 
+                 24       npar              0         0         0         0         1
+                 25       mp                0         0         0         0         1
+                 26       w                 0         0         0         0         2
+                 27       det               0         0         0         0         2
+                 28       r                 0         0         0         0         2
+                 29       shl               0         0         0         0         2
+                 30       shg               0         0         0         0         2
+                 31       shgbar            0         0         0         0         2
+                 32       rho               0         0         0         0         2
+                 33       rdampm            0         0         0         0         2
+                 34       rdampk            0         0         0         0         2
+                 35       th                0         0         0         0         2
+                 36       c                 0         0         0         0         2
+                 37       grav              0         0         0         0         2
+                 38       ien               0         0         0         0         1
+                 39       mat               0         0         0         0         1
+                 40       lm                0         0         0         0         1
+                 41       ielno             0         0         0         0         1
+                 42       iside             0         0         0         0         1
+                 43       press             0         0         0         0         2
+                 44       shear             0         0         0         0         2
+                 45       ishist            0         0         0         0         1
+                 46       sout              0         0         0         0         1
+                 47       eleffm            0         0         0         0         2
+                 48       xl                0         0         0         0         2
+                 49       work              0         0         0         0         2
+                 50       b                 0         0         0         0         2
+1 d y n a m i c   s t o r a g e    a l l o c a t i o n   i n f o r m a t i o n 
+
+            array no.     array        address      dim1      dim2      dim3      prec.
+
+                 51       dmat              0         0         0         0         2
+                 52       db                0         0         0         0         2
+                 53       vl                0         0         0         0         2
+                 54       al                0         0         0         0         2
+                 55       elresf            0         0         0         0         2
+                 56       dl                0         0         0         0         2
+                 57       strain            0         0         0         0         2
+                 58       stress            0         0         0         0         2
+                 59       pstrn             0         0         0         0         2
+                 60       pstrs             0         0         0         0         2
+
+              *****       end element group data
+ 
+                 61       alhs              0         0         0         0         2
+                 62       brhs              0         0         0         0         2
+1plane strain cantilever beam: dynamic analysis with alpha method                
+
+
+      e x e c u t i o n   t i m i n g   i n f o r m a t i o n
+
+
+      i n i t i a l i z a t i o n   p h a s e        =  0.000E+00
+
+
+      s o l u t i o n   p h a s e                    =  1.172E-02
+
+
+          formation of left-hand-side matrices       =  0.000E+00
+
+          factorizations                             =  0.000E+00
+
+          formation of right-hand-side vectors       =  1.172E-02
+
+          forward reductions/back substitutions      =  0.000E+00
+
+          calculation of element output              =  0.000E+00
+                                                        _________
+
+          subtotal                                   =  1.172E-02

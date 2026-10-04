@@ -1,0 +1,750 @@
+1implicit-explicit dynamic analysis of a rod                                     
+
+
+ e x e c u t i o n   c o n t r o l   i n f o r m a t i o n 
+
+      execution code  . . . . . . . . . . . . . . (iexec ) =     1
+
+         eq. 0, data check                                   
+         eq. 1, execution                                    
+
+      analysis code . . . . . . . . . . . . . . . (iacode) =     0
+
+         eq. 0, dynamic analysis                             
+         eq. 1, static analysis                              
+
+      read restart file code  . . . . . . . . . . (ireadr) =     0
+
+         eq. 0, do not read restart file                     
+         eq. 1, read restart file                            
+
+      write restart file code . . . . . . . . . . (iwritr) =     0
+
+         eq. 0, do not write restart file                    
+         eq. 1, write restart file                           
+
+      input data print code . . . . . . . . . . . (iprtin) =     0
+
+         eq. 0, print nodal and element input data           
+         eq. 1, do not print nodal and element input data    
+
+      rank check code . . . . . . . . . . . . . . (irank ) =     0
+
+         eq. 0, do not perform rank check                    
+         eq. 1, print numbers of zero and negative pivots    
+         eq. 2, print all pivots                             
+
+      number of time sequences  . . . . . . . . . (numseq) =     2
+
+      number of nodal output time-histories . . . (ndout ) =     1
+
+      number of space dimensions  . . . . . . . . (nsd   ) =     3
+
+      number of nodal points  . . . . . . . . . . (numnp ) =    22
+
+      number of nodal degrees-of-freedom  . . . . (ndof  ) =     3
+
+      number of load vectors  . . . . . . . . . . (nlvect) =     0
+
+      number of load-time functions . . . . . . . (nltftn) =     0
+
+      number of points on load-time functions . . (nptslf) =     0
+
+      number of element groups  . . . . . . . . . (numeg ) =     2
+
+
+1 t i m e   s e q u e n c e   d a t a      
+
+      number of time sequences . . . . . . (numseq  ) =     2
+
+
+
+      time sequence number . . . . . . . . (n       ) =     1
+
+      number of time steps . . . . . . . . (nstep(n)) =     1
+
+      kinematic print increment  . . . . . (ndprt(n)) =     1
+
+      stress/strain print increment  . . . (nsprt(n)) =     1
+
+      time history plot increment  . . . . (nhplt(n)) =     1
+
+      number of iterations . . . . . . . . (niter(n)) =     1
+
+      first integration parameter  . . . . (alpha(n)) =  0.00000E+00
+
+      second integration parameter . . . . (beta(n) ) =  0.00000E+00
+
+      third integration parameter  . . . . (gamma(n)) =  0.00000E+00
+
+      time step  . . . . . . . . . . . . . (dt(n)   ) =  0.00000E+00
+
+
+
+
+      time sequence number . . . . . . . . (n       ) =     2
+
+      number of time steps . . . . . . . . (nstep(n)) =   100
+
+      kinematic print increment  . . . . . (ndprt(n)) =     0
+
+      stress/strain print increment  . . . (nsprt(n)) =     0
+
+      time history plot increment  . . . . (nhplt(n)) =     2
+
+      number of iterations . . . . . . . . (niter(n)) =     1
+
+      first integration parameter  . . . . (alpha(n)) =  0.00000E+00
+
+      second integration parameter . . . . (beta(n) ) =  3.02500E-01
+
+      third integration parameter  . . . . (gamma(n)) =  6.00000E-01
+
+      time step  . . . . . . . . . . . . . (dt(n)   ) =  4.50000E-03
+
+
+
+
+1 n o d a l   t i m e - h i s t o r y   i n f o r m a t i o n
+
+      number of nodal time histories  . . . . . . (ndout ) =     1
+
+
+         node      dof     kinematic 
+        number    number     type    
+
+          22         1       disp
+1 n o d a l   c o o r d i n a t e   d a t a 
+
+
+      node no.              x1               x2               x3 
+          1           0.00000000E+00   0.00000000E+00   0.00000000E+00
+          2           5.00000000E-01   0.00000000E+00   0.00000000E+00
+          3           1.00000000E+00   0.00000000E+00   0.00000000E+00
+          4           1.50000000E+00   0.00000000E+00   0.00000000E+00
+          5           2.00000000E+00   0.00000000E+00   0.00000000E+00
+          6           2.50000000E+00   0.00000000E+00   0.00000000E+00
+          7           3.00000000E+00   0.00000000E+00   0.00000000E+00
+          8           3.50000000E+00   0.00000000E+00   0.00000000E+00
+          9           4.00000000E+00   0.00000000E+00   0.00000000E+00
+         10           4.50000000E+00   0.00000000E+00   0.00000000E+00
+         11           5.00000000E+00   0.00000000E+00   0.00000000E+00
+         12           5.50000000E+00   0.00000000E+00   0.00000000E+00
+         13           6.00000000E+00   0.00000000E+00   0.00000000E+00
+         14           6.50000000E+00   0.00000000E+00   0.00000000E+00
+         15           7.00000000E+00   0.00000000E+00   0.00000000E+00
+         16           7.50000000E+00   0.00000000E+00   0.00000000E+00
+         17           8.00000000E+00   0.00000000E+00   0.00000000E+00
+         18           8.50000000E+00   0.00000000E+00   0.00000000E+00
+         19           9.00000000E+00   0.00000000E+00   0.00000000E+00
+         20           9.50000000E+00   0.00000000E+00   0.00000000E+00
+         21           1.00000000E+01   0.00000000E+00   0.00000000E+00
+         22           1.05000000E+01   0.00000000E+00   0.00000000E+00
+1 n o d a l   b o u n d a r y   c o n d i t i o n   c o d e s
+
+
+      node no.         dof1      dof2      dof3
+          1              1         1         1
+          2              0         1         1
+          3              0         1         1
+          4              0         1         1
+          5              0         1         1
+          6              0         1         1
+          7              0         1         1
+          8              0         1         1
+          9              0         1         1
+         10              0         1         1
+         11              0         1         1
+         12              0         1         1
+         13              0         1         1
+         14              0         1         1
+         15              0         1         1
+         16              0         1         1
+         17              0         1         1
+         18              0         1         1
+         19              0         1         1
+         20              0         1         1
+         21              0         1         1
+         22              0         1         1
+1 i n i t i a l   d i s p l a c e m e n t s  
+
+      step number =          0
+
+      time        =  0.000E+00
+
+
+      node no.             dof1             dof2             dof3
+          2           5.00000000E-03   0.00000000E+00   0.00000000E+00
+          3           1.00000000E-02   0.00000000E+00   0.00000000E+00
+          4           1.50000000E-02   0.00000000E+00   0.00000000E+00
+          5           2.00000000E-02   0.00000000E+00   0.00000000E+00
+          6           2.50000000E-02   0.00000000E+00   0.00000000E+00
+          7           3.00000000E-02   0.00000000E+00   0.00000000E+00
+          8           3.50000000E-02   0.00000000E+00   0.00000000E+00
+          9           4.00000000E-02   0.00000000E+00   0.00000000E+00
+         10           4.50000000E-02   0.00000000E+00   0.00000000E+00
+         11           5.00000000E-02   0.00000000E+00   0.00000000E+00
+         12           5.50000000E-02   0.00000000E+00   0.00000000E+00
+         13           6.00000000E-02   0.00000000E+00   0.00000000E+00
+         14           6.50000000E-02   0.00000000E+00   0.00000000E+00
+         15           7.00000000E-02   0.00000000E+00   0.00000000E+00
+         16           7.50000000E-02   0.00000000E+00   0.00000000E+00
+         17           8.00000000E-02   0.00000000E+00   0.00000000E+00
+         18           8.50000000E-02   0.00000000E+00   0.00000000E+00
+         19           9.00000000E-02   0.00000000E+00   0.00000000E+00
+         20           9.50000000E-02   0.00000000E+00   0.00000000E+00
+         21           1.00000000E-01   0.00000000E+00   0.00000000E+00
+         22           1.00000000E-01   0.00000000E+00   0.00000000E+00
+1
+
+ there are no nonzero initial velocities   
+1
+
+ there are no nonzero initial accelerations
+1 e l e m e n t   g r o u p   d a t a         
+
+      element group number  . . . . . . . . . . . (neg   ) =     1
+
+
+
+  t w o / t h r e e - n o d e   t r u s s   e l e m e n t s
+
+      element type number . . . . . . . . . . . . (ntype ) =     2
+
+      number of elements  . . . . . . . . . . . . (numel ) =     1
+
+      number of element material sets . . . . . . (numat ) =     1
+
+      number of element nodes . . . . . . . . . . (nen   ) =     2
+
+      number of stress/strain time histories  . . (nsout ) =     0
+
+      stress output print code  . . . . . . . . . (istprt) =     0
+
+         eq.0, stress output printed                         
+         eq.1, stress output not printed                     
+
+      body force load-time function number  . . . (lfbody) =     0
+
+      integration code  . . . . . . . . . . . . . (nint  ) =     1
+
+         eq.1, 1-point gaussian quadrature                   
+         eq.2, 2-point gaussian quadrature                   
+         eq.3, 3-point gaussian quadrature                   
+
+ 
+      mass type code  . . . . . . . . . . . . . . (imass ) =     1
+
+         eq.0, consistent mass matrix                        
+         eq.1, lumped mass matrix                            
+         eq.2, no mass matrix                                
+
+      implicit/explicit code  . . . . . . . . . . (impexp) =     0
+
+         eq.0, implicit element group                        
+         eq.1, explicit element group                        
+
+
+1 m a t e r i a l   s e t   d a t a                      
+
+      number of material sets . . . . . . . . . . (numat ) =     1
+
+
+       set     young's      mass        mass      stiffness      area
+      number   modulus     density     damping     damping
+
+        1     1.0000E+07  1.0000E-02  0.0000E+00  0.0000E+00  1.0000E+00
+
+
+
+
+  g r a v i t y   v e c t o r   c o m p o n e n t s      
+
+      x-1 direction . . . . . . . . . . . . . . =  0.00000000E+00
+
+      x-2 direction . . . . . . . . . . . . . . =  0.00000000E+00
+
+      x-3 direction . . . . . . . . . . . . . . =  0.00000000E+00
+
+
+1 e l e m e n t   d a t a
+
+      element   material  node 1    node 2
+          1         1        21        22
+1 e l e m e n t   g r o u p   d a t a         
+
+      element group number  . . . . . . . . . . . (neg   ) =     2
+
+
+
+  t w o / t h r e e - n o d e   t r u s s   e l e m e n t s
+
+      element type number . . . . . . . . . . . . (ntype ) =     2
+
+      number of elements  . . . . . . . . . . . . (numel ) =    20
+
+      number of element material sets . . . . . . (numat ) =     1
+
+      number of element nodes . . . . . . . . . . (nen   ) =     2
+
+      number of stress/strain time histories  . . (nsout ) =     1
+
+      stress output print code  . . . . . . . . . (istprt) =     0
+
+         eq.0, stress output printed                         
+         eq.1, stress output not printed                     
+
+      body force load-time function number  . . . (lfbody) =     0
+
+      integration code  . . . . . . . . . . . . . (nint  ) =     1
+
+         eq.1, 1-point gaussian quadrature                   
+         eq.2, 2-point gaussian quadrature                   
+         eq.3, 3-point gaussian quadrature                   
+
+ 
+      mass type code  . . . . . . . . . . . . . . (imass ) =     1
+
+         eq.0, consistent mass matrix                        
+         eq.1, lumped mass matrix                            
+         eq.2, no mass matrix                                
+
+      implicit/explicit code  . . . . . . . . . . (impexp) =     1
+
+         eq.0, implicit element group                        
+         eq.1, explicit element group                        
+
+
+1 m a t e r i a l   s e t   d a t a                      
+
+      number of material sets . . . . . . . . . . (numat ) =     1
+
+
+       set     young's      mass        mass      stiffness      area
+      number   modulus     density     damping     damping
+
+        1     1.0000E+02  1.0000E-02  0.0000E+00  0.0000E+00  1.0000E+00
+
+
+
+
+  g r a v i t y   v e c t o r   c o m p o n e n t s      
+
+      x-1 direction . . . . . . . . . . . . . . =  0.00000000E+00
+
+      x-2 direction . . . . . . . . . . . . . . =  0.00000000E+00
+
+      x-3 direction . . . . . . . . . . . . . . =  0.00000000E+00
+
+
+1 e l e m e n t   d a t a
+
+      element   material  node 1    node 2
+          1         1         1         2
+          2         1         2         3
+          3         1         3         4
+          4         1         4         5
+          5         1         5         6
+          6         1         6         7
+          7         1         7         8
+          8         1         8         9
+          9         1         9        10
+         10         1        10        11
+         11         1        11        12
+         12         1        12        13
+         13         1        13        14
+         14         1        14        15
+         15         1        15        16
+         16         1        16        17
+         17         1        17        18
+         18         1        18        19
+         19         1        19        20
+         20         1        20        21
+1 e l e m e n t   t i m e   h i s t o r y   i n f o r m a t i o n 
+
+      number of stress/strain time histories  . . (nsout ) =     1
+
+
+        element   int pt   component
+        number    number            
+
+          10         1       strs
+1implicit-explicit dynamic analysis of a rod                                     
+
+
+ e q u a t i o n    s y s t e m    d a t a              
+
+      number of equations . . . . . . . . . . . . (neq   ) =       21
+
+      number of terms in left-hand-side matrix  . (nalhs ) =       22
+
+      mean half bandwidth . . . . . . . . . . . . (meanbw) =        1
+
+      total length of blank common required . . . (nwords) =     2542
+1 d i s p l a c e m e n t s                  
+
+      step number =          1
+
+      time        =  0.000E+00
+
+
+      node no.             dof1             dof2             dof3
+          2           5.00000000E-03   0.00000000E+00   0.00000000E+00
+          3           1.00000000E-02   0.00000000E+00   0.00000000E+00
+          4           1.50000000E-02   0.00000000E+00   0.00000000E+00
+          5           2.00000000E-02   0.00000000E+00   0.00000000E+00
+          6           2.50000000E-02   0.00000000E+00   0.00000000E+00
+          7           3.00000000E-02   0.00000000E+00   0.00000000E+00
+          8           3.50000000E-02   0.00000000E+00   0.00000000E+00
+          9           4.00000000E-02   0.00000000E+00   0.00000000E+00
+         10           4.50000000E-02   0.00000000E+00   0.00000000E+00
+         11           5.00000000E-02   0.00000000E+00   0.00000000E+00
+         12           5.50000000E-02   0.00000000E+00   0.00000000E+00
+         13           6.00000000E-02   0.00000000E+00   0.00000000E+00
+         14           6.50000000E-02   0.00000000E+00   0.00000000E+00
+         15           7.00000000E-02   0.00000000E+00   0.00000000E+00
+         16           7.50000000E-02   0.00000000E+00   0.00000000E+00
+         17           8.00000000E-02   0.00000000E+00   0.00000000E+00
+         18           8.50000000E-02   0.00000000E+00   0.00000000E+00
+         19           9.00000000E-02   0.00000000E+00   0.00000000E+00
+         20           9.50000000E-02   0.00000000E+00   0.00000000E+00
+         21           1.00000000E-01   0.00000000E+00   0.00000000E+00
+         22           1.00000000E-01   0.00000000E+00   0.00000000E+00
+1 v e l o c i t i e s                        
+
+      step number =          1
+
+      time        =  0.000E+00
+
+
+      node no.             dof1             dof2             dof3
+ 
+
+ there are no nonzero components
+1 a c c e l e r a t i o n s                  
+
+      step number =          1
+
+      time        =  0.000E+00
+
+
+      node no.             dof1             dof2             dof3
+          5          -6.66133815E-14   0.00000000E+00   0.00000000E+00
+          6           1.33226763E-13   0.00000000E+00   0.00000000E+00
+          8          -1.33226763E-13   0.00000000E+00   0.00000000E+00
+          9           2.66453526E-13   0.00000000E+00   0.00000000E+00
+         10          -2.66453526E-13   0.00000000E+00   0.00000000E+00
+         11           2.66453526E-13   0.00000000E+00   0.00000000E+00
+         12          -2.66453526E-13   0.00000000E+00   0.00000000E+00
+         13          -2.88657986E-13   0.00000000E+00   0.00000000E+00
+         14           5.55111512E-13   0.00000000E+00   0.00000000E+00
+         15           1.11022302E-12   0.00000000E+00   0.00000000E+00
+         16          -1.66533454E-12   0.00000000E+00   0.00000000E+00
+         18           5.55111512E-13   0.00000000E+00   0.00000000E+00
+         19           5.32907052E-13   0.00000000E+00   0.00000000E+00
+         20          -2.19824159E-12   0.00000000E+00   0.00000000E+00
+         21          -2.00000000E+02   0.00000000E+00   0.00000000E+00
+         22          -1.11022302E-07   0.00000000E+00   0.00000000E+00
+1 e l e m e n t   s t r e s s e s   a n d   s t r a i n s
+
+      element group number  . . . . . . . . . . . (neg   ) =     1
+
+
+  element  int. pt.          x1        x2        x3           stress    force     strain  
+   number   number         coord.    coord.    coord.  
+
+      1        1          1.02E+01  0.00E+00  0.00E+00       2.78E-10  2.78E-10  2.78E-17
+1 e l e m e n t   s t r e s s e s   a n d   s t r a i n s
+
+      element group number  . . . . . . . . . . . (neg   ) =     2
+
+
+  element  int. pt.          x1        x2        x3           stress    force     strain  
+   number   number         coord.    coord.    coord.  
+
+      1        1          2.50E-01  0.00E+00  0.00E+00       1.00E+00  1.00E+00  1.00E-02
+
+      2        1          7.50E-01  0.00E+00  0.00E+00       1.00E+00  1.00E+00  1.00E-02
+
+      3        1          1.25E+00  0.00E+00  0.00E+00       1.00E+00  1.00E+00  1.00E-02
+
+      4        1          1.75E+00  0.00E+00  0.00E+00       1.00E+00  1.00E+00  1.00E-02
+
+      5        1          2.25E+00  0.00E+00  0.00E+00       1.00E+00  1.00E+00  1.00E-02
+
+      6        1          2.75E+00  0.00E+00  0.00E+00       1.00E+00  1.00E+00  1.00E-02
+
+      7        1          3.25E+00  0.00E+00  0.00E+00       1.00E+00  1.00E+00  1.00E-02
+
+      8        1          3.75E+00  0.00E+00  0.00E+00       1.00E+00  1.00E+00  1.00E-02
+
+      9        1          4.25E+00  0.00E+00  0.00E+00       1.00E+00  1.00E+00  1.00E-02
+
+     10        1          4.75E+00  0.00E+00  0.00E+00       1.00E+00  1.00E+00  1.00E-02
+
+     11        1          5.25E+00  0.00E+00  0.00E+00       1.00E+00  1.00E+00  1.00E-02
+
+     12        1          5.75E+00  0.00E+00  0.00E+00       1.00E+00  1.00E+00  1.00E-02
+
+     13        1          6.25E+00  0.00E+00  0.00E+00       1.00E+00  1.00E+00  1.00E-02
+
+     14        1          6.75E+00  0.00E+00  0.00E+00       1.00E+00  1.00E+00  1.00E-02
+
+     15        1          7.25E+00  0.00E+00  0.00E+00       1.00E+00  1.00E+00  1.00E-02
+
+     16        1          7.75E+00  0.00E+00  0.00E+00       1.00E+00  1.00E+00  1.00E-02
+
+     17        1          8.25E+00  0.00E+00  0.00E+00       1.00E+00  1.00E+00  1.00E-02
+
+     18        1          8.75E+00  0.00E+00  0.00E+00       1.00E+00  1.00E+00  1.00E-02
+
+     19        1          9.25E+00  0.00E+00  0.00E+00       1.00E+00  1.00E+00  1.00E-02
+
+     20        1          9.75E+00  0.00E+00  0.00E+00       1.00E+00  1.00E+00  1.00E-02
+1implicit-explicit dynamic analysis of a rod                                     
+
+
+ node number =    22
+
+ dof number  =     1     output: disp
+
+
+     time        value      -9.5442E-02                                1.0000E-01
+  ----------   ----------   -----------------------------------------------------
+  0.0000E+00   1.0000E-01                                                       *
+  0.0000E+00   1.0000E-01                                                       *
+  9.0000E-03   9.5603E-02                                                      * 
+  1.8000E-02   8.7134E-02                                                    *   
+  2.7000E-02   7.8211E-02                                                  *     
+  3.6000E-02   6.9223E-02                                               *        
+  4.5000E-02   6.0225E-02                                             *          
+  5.4000E-02   5.1225E-02                                          *             
+  6.3000E-02   4.2225E-02                                        *               
+  7.2000E-02   3.3225E-02                                     *                  
+  8.1000E-02   2.4225E-02                                   *                    
+  9.0000E-02   1.5225E-02                                 *                      
+  9.9000E-02   6.2250E-03                              *                         
+  1.0800E-01  -2.7750E-03                            *                           
+  1.1700E-01  -1.1775E-02                         *                              
+  1.2600E-01  -2.0775E-02                       *                                
+  1.3500E-01  -2.9775E-02                    *                                   
+  1.4400E-01  -3.8775E-02                  *                                     
+  1.5300E-01  -4.7775E-02               *                                        
+  1.6200E-01  -5.6775E-02             *                                          
+  1.7100E-01  -6.5775E-02           *                                            
+  1.8000E-01  -7.4774E-02        *                                               
+  1.8900E-01  -8.3659E-02      *                                                 
+  1.9800E-01  -9.1395E-02    *                                                   
+  2.0700E-01  -9.5442E-02   *                                                    
+  2.1600E-01  -9.4162E-02   *                                                    
+  2.2500E-01  -8.8593E-02    *                                                   
+  2.3400E-01  -8.0782E-02      *                                                 
+  2.4300E-01  -7.2120E-02         *                                              
+  2.5200E-01  -6.3202E-02           *                                            
+  2.6100E-01  -5.4220E-02              *                                         
+  2.7000E-01  -4.5224E-02                *                                       
+  2.7900E-01  -3.6225E-02                   *                                    
+  2.8800E-01  -2.7225E-02                     *                                  
+  2.9700E-01  -1.8225E-02                       *                                
+  3.0600E-01  -9.2250E-03                          *                             
+  3.1500E-01  -2.2500E-04                            *                           
+  3.2400E-01   8.7750E-03                               *                        
+  3.3300E-01   1.7775E-02                                 *                      
+  3.4200E-01   2.6775E-02                                    *                   
+  3.5100E-01   3.5775E-02                                      *                 
+  3.6000E-01   4.4775E-02                                         *              
+  3.6900E-01   5.3776E-02                                           *            
+  3.7800E-01   6.2782E-02                                             *          
+  3.8700E-01   7.1777E-02                                                *       
+  3.9600E-01   8.0459E-02                                                  *     
+  4.0500E-01   8.7779E-02                                                    *   
+  4.1400E-01   9.2123E-02                                                     *  
+  4.2300E-01   9.2408E-02                                                     *  
+  4.3200E-01   8.8829E-02                                                    *   
+  4.4100E-01   8.2499E-02                                                   *    
+  4.5000E-01   7.4625E-02                                                 *      
+1implicit-explicit dynamic analysis of a rod                                     
+
+
+ element number            =    10
+
+ integration point number  =     1     output: strs
+
+
+     time        value      -1.0018E+00                                1.0021E+00
+  ----------   ----------   -----------------------------------------------------
+  0.0000E+00   1.0000E+00                                                       *
+  0.0000E+00   1.0000E+00                                                       *
+  9.0000E-03   1.0000E+00                                                       *
+  1.8000E-02   1.0000E+00                                                       *
+  2.7000E-02   1.0000E+00                                                       *
+  3.6000E-02   1.0000E+00                                                       *
+  4.5000E-02   9.8613E-01                                                       *
+  5.4000E-02   6.9567E-01                                               *        
+  6.3000E-02   2.1295E-01                                   *                    
+  7.2000E-02   3.7574E-02                              *                         
+  8.1000E-02   5.5897E-03                             *                          
+  9.0000E-02   8.4809E-04                             *                          
+  9.9000E-02   1.4168E-04                             *                          
+  1.0800E-01   2.8074E-05                             *                          
+  1.1700E-01   6.3156E-06                             *                          
+  1.2600E-01   8.1778E-07                             *                          
+  1.3500E-01  -1.4638E-02                             *                          
+  1.4400E-01  -1.7536E-01                        *                               
+  1.5300E-01  -5.3637E-01               *                                        
+  1.6200E-01  -8.3211E-01       *                                                
+  1.7100E-01  -9.5730E-01    *                                                   
+  1.8000E-01  -9.9151E-01   *                                                    
+  1.8900E-01  -9.9855E-01   *                                                    
+  1.9800E-01  -9.9977E-01   *                                                    
+  2.0700E-01  -9.9996E-01   *                                                    
+  2.1600E-01  -9.9999E-01   *                                                    
+  2.2500E-01  -1.0000E+00   *                                                    
+  2.3400E-01  -1.0018E+00   *                                                    
+  2.4300E-01  -9.9973E-01   *                                                    
+  2.5200E-01  -9.2160E-01     *                                                  
+  2.6100E-01  -6.9174E-01           *                                            
+  2.7000E-01  -3.9669E-01                   *                                    
+  2.7900E-01  -1.7502E-01                        *                               
+  2.8800E-01  -6.1613E-02                           *                            
+  2.9700E-01  -1.8053E-02                             *                          
+  3.0600E-01  -4.5810E-03                             *                          
+  3.1500E-01  -1.1041E-03                             *                          
+  3.2400E-01  -1.2314E-03                             *                          
+  3.3300E-01   1.1990E-03                             *                          
+  3.4200E-01   4.6505E-02                              *                         
+  3.5100E-01   1.9879E-01                                  *                     
+  3.6000E-01   4.4648E-01                                         *              
+  3.6900E-01   6.9268E-01                                               *        
+  3.7800E-01   8.6165E-01                                                    *   
+  3.8700E-01   9.4836E-01                                                      * 
+  3.9600E-01   9.8359E-01                                                       *
+  4.0500E-01   9.9545E-01                                                       *
+  4.1400E-01   9.9886E-01                                                       *
+  4.2300E-01   9.9975E-01                                                       *
+  4.3200E-01   1.0009E+00                                                       *
+  4.4100E-01   1.0021E+00                                                       *
+  4.5000E-01   9.8302E-01                                                       *
+1 d y n a m i c   s t o r a g e    a l l o c a t i o n   i n f o r m a t i o n 
+
+            array no.     array        address      dim1      dim2      dim3      prec.
+
+                  1       nstep             0         0         0         0         1
+                  2       ndprt             0         0         0         0         1
+                  3       nsprt             0         0         0         0         1
+                  4       nhplt             0         0         0         0         1
+                  5       niter             0         0         0         0         1
+                  6       alpha             0         0         0         0         2
+                  7       beta              0         0         0         0         2
+                  8       gamma             0         0         0         0         2
+                  9       dt                0         0         0         0         2
+                 10       idhist            0         0         0         0         1
+                 11       dout              0         0         0         0         1
+                 12       vpred             0         0         0         0         2
+                 13       dpred             0         0         0         0         2
+                 14       a                 0         0         0         0         2
+                 15       v                 0         0         0         0         2
+                 16       d                 0         0         0         0         2
+                 17       x                 0         0         0         0         2
+                 18       id                0         0         0         0         1
+                 19       idiag             0         0         0         0         1
+                 20       ngrp              0         0         0         0         1
+
+              *****       begin element group number    1
+ 
+                 21       npar              0         0         0         0         1
+                 22       mp                0         0         0         0         1
+                 23       w                 0         0         0         0         2
+                 24       det               0         0         0         0         2
+                 25       shl               0         0         0         0         2
+                 26       shg               0         0         0         0         2
+                 27       xs                0         0         0         0         2
+                 28       rho               0         0         0         0         2
+                 29       rdampm            0         0         0         0         2
+                 30       rdampk            0         0         0         0         2
+                 31       area              0         0         0         0         2
+                 32       c                 0         0         0         0         2
+                 33       grav              0         0         0         0         2
+                 34       ien               0         0         0         0         1
+                 35       mat               0         0         0         0         1
+                 36       lm                0         0         0         0         1
+                 37       eleffm            0         0         0         0         2
+                 38       xl                0         0         0         0         2
+                 39       work              0         0         0         0         2
+                 40       b                 0         0         0         0         2
+                 41       dmat              0         0         0         0         2
+                 42       db                0         0         0         0         2
+                 43       vl                0         0         0         0         2
+                 44       al                0         0         0         0         2
+                 45       elresf            0         0         0         0         2
+                 46       dl                0         0         0         0         2
+                 47       strain            0         0         0         0         2
+                 48       stress            0         0         0         0         2
+                 49       force             0         0         0         0         2
+
+              *****       begin element group number    2
+ 
+                 50       npar              0         0         0         0         1
+1 d y n a m i c   s t o r a g e    a l l o c a t i o n   i n f o r m a t i o n 
+
+            array no.     array        address      dim1      dim2      dim3      prec.
+
+                 51       mp                0         0         0         0         1
+                 52       w                 0         0         0         0         2
+                 53       det               0         0         0         0         2
+                 54       shl               0         0         0         0         2
+                 55       shg               0         0         0         0         2
+                 56       xs                0         0         0         0         2
+                 57       rho               0         0         0         0         2
+                 58       rdampm            0         0         0         0         2
+                 59       rdampk            0         0         0         0         2
+                 60       area              0         0         0         0         2
+                 61       c                 0         0         0         0         2
+                 62       grav              0         0         0         0         2
+                 63       ien               0         0         0         0         1
+                 64       mat               0         0         0         0         1
+                 65       lm                0         0         0         0         1
+                 66       ishist            0         0         0         0         1
+                 67       sout              0         0         0         0         1
+                 68       eleffm            0         0         0         0         2
+                 69       xl                0         0         0         0         2
+                 70       work              0         0         0         0         2
+                 71       b                 0         0         0         0         2
+                 72       dmat              0         0         0         0         2
+                 73       db                0         0         0         0         2
+                 74       vl                0         0         0         0         2
+                 75       al                0         0         0         0         2
+                 76       elresf            0         0         0         0         2
+                 77       dl                0         0         0         0         2
+                 78       strain            0         0         0         0         2
+                 79       stress            0         0         0         0         2
+                 80       force             0         0         0         0         2
+
+              *****       end element group data
+ 
+                 81       alhs              0         0         0         0         2
+                 82       brhs              0         0         0         0         2
+1implicit-explicit dynamic analysis of a rod                                     
+
+
+      e x e c u t i o n   t i m i n g   i n f o r m a t i o n
+
+
+      i n i t i a l i z a t i o n   p h a s e        =  0.000E+00
+
+
+      s o l u t i o n   p h a s e                    =  0.000E+00
+
+
+          formation of left-hand-side matrices       =  0.000E+00
+
+          factorizations                             =  0.000E+00
+
+          formation of right-hand-side vectors       =  0.000E+00
+
+          forward reductions/back substitutions      =  0.000E+00
+
+          calculation of element output              =  0.000E+00
+                                                        _________
+
+          subtotal                                   =  0.000E+00
