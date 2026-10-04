@@ -1,13 +1,14 @@
 # Data-file generation for structural-analysis software
 
 **Luiz Eduardo Lollato Junqueira**
+
 Supervisor: Prof. Dr. Heitor Miranda Bottura
 
 Universidade Estadual Paulista (UNESP), Campus de Bauru, Faculdade de Engenharia de Bauru,
 Departamento de Engenharia Civil, Área: Estruturas — December 2001
 
 > English translation of the graduation thesis *Geração de arquivos de dados para software de
-> análise estrutural* (Portuguese original: `junqueira-2001-geracao-arquivos-dados-software-analise-estrutural.pdf`
+> análise estrutural* (Portuguese original: `junqueira-2001-geracao-arquivos-dados-software-analise-estrutural-ptbr.pdf`
 > in this folder). Translated by the author in 2026 with AI assistance; the text follows the
 > original closely, including its 2001 statements, except where a bracketed *[2026 note]*
 > says otherwise. The annexes of the original (DLEARN variable list, PPD source listing,
@@ -23,7 +24,7 @@ Departamento de Engenharia Civil, Área: Estruturas — December 2001
 5. Results obtained
 6. Analysis of results and conclusions
 7. Bibliography
-Annexes (see note at the end)
+8. Annexes — where to find them in this repository
 
 ## Abstract
 

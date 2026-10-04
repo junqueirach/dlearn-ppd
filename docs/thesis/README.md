@@ -1,7 +1,7 @@
 # 2001 thesis
 
-* `junqueira-2001-geracao-arquivos-dados-software-analise-estrutural.pdf` — the original (Portuguese)
-* [`thesis-en.md`](thesis-en.md) — English translation of the main text, with 2026 notes and a map of the annexes to the repository
+* `junqueira-2001-geracao-arquivos-dados-software-analise-estrutural-ptbr.pdf` — the original (Portuguese)
+* [`thesis-en.md`](thesis-en.md) / [`junqueira-2001-geracao-arquivos-dados-software-analise-estrutural-en.pdf`](junqueira-2001-geracao-arquivos-dados-software-analise-estrutural-en.pdf) — English translation of the main text (13 pages), with 2026 notes and a map of the annexes to the repository
 
 Luiz Eduardo Lollato Junqueira, **Geração de arquivos de dados para software de análise
 estrutural** (Data-file generation for structural-analysis software). Trabalho de
