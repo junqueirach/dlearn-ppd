@@ -121,6 +121,9 @@ If you use this in research, please cite Hughes (1987) for DLEARN, Bottura & Lai
 for the Hermitian algorithms, and this repository for the pre-processor
 ([`CITATION.cff`](CITATION.cff)).
 
+The 2001 graduation thesis (in Portuguese) is also archived on Zenodo, with a DOI:
+[10.5281/zenodo.23123767](https://doi.org/10.5281/zenodo.23123767).
+
 ## Repository layout
 
 ```
